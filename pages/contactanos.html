@@ -57,26 +57,27 @@
                                 <div class="form-group col-md-12">
                                     <label for="Nombre completo">Nombre completo</label>
                                     <br />
-                                    <input type="text" name="nombre" id="nombre" class="form-group" placeholder="Escriba su nombre completo" maxlength="50">
+                                    <input  id="nombre" type="text" name="nombre" class="form-group" onchange="validar1()" placeholder="Nombre Completo" required minlength="3" maxlength="18">
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="Correo Electrónico">Correo Electrónico</label>
-                                    <input type="mail" name="correo" id="correo" class="form-group" placeholder="Escribe tu Correo electrónico" maxlength="50">
+                                    <input id="mail" type="mail" name="correo"  onchange="validar2()"class="form-group" placeholder="Correo electrónico"  required minlength="10" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="Teléfono">Número de teléfono</label>                                    
-                                    <input type="text" name="Teléfono" id="teléfono" class="form-group" placeholder="Escribe tu Teléfono" maxlength="10">
+                                    <input  id="teléfono" type="text" onchange="validar3()" name="Teléfono" class="form-group" placeholder="Número de Teléfono" required minlength="8" maxlength="10">
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label for="Asunto">Asunto del mensaje</label>
-                                    <input type="text" name="asunto" id="asunto" class="form-group" placeholder="Escribe un asunto" maxlength="50">
+                                    <label for="Asunto" name="asuntoform">Asunto del mensaje</label>
+                                    <input type="text" name="asuntoinput"  onchange="validar4()"  class="form-group info" placeholder="Asunto" required minlength="5" maxlength="30" id="asunto1">
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="Mensaje">Mensaje para enviar</label>
-                                    <textarea cols="21" rows="3" type="text" name="Mensaje" id="mensaje" class="form-group" placeholder="Ingresa un mensaje" ></textarea>
+                                    <textarea id="texto"  onchange="validar5()" cols="30" rows="5"  placeholder=" Ingresa un mensaje" required minlength="10" maxlength="200"> </textarea>
                                 </div>
                                 <div id="botones" class="form-group col-md-12">
-                                    <button type="submit" name="Enviar" class="btn btn-primary">Enviar</button>
+                                    <a  href="#" type="submit" name="Enviar" class="btn btn-primary"  id="correo" onclick="crearlink()"> Enviar</a>
+                                    <!-- <button type="submit" name="Enviar" class="btn btn-primary">Enviar</button> -->
                                     <button type="reset"  name="Borrar" class="btn btn-warning">Borrar</button>
                                 </div><!--div boton-->
                             </div>
