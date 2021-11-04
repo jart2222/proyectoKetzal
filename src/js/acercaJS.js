@@ -119,3 +119,27 @@ else if(a==8){
 
 
 }
+
+function crearlink(){
+
+
+  if (validar1()==true || validar2() ==true || validar3() ==true || validar4()==true ||  validar5() ==true  ) {
+
+      alert(" Acompleta los campos");
+      
+  }
+  else {
+      var input_correo = document.getElementById("mail").value;
+      var input_nombre = document.getElementById("nombre").value;
+      var texto1 =document.getElementById("texto").value;
+      var asunto3 = document.getElementById("asunto1").value
+
+      let anclacorreo=document.getElementById("correo");
+      anclacorreo.href =`mailto:jart2607@gmail.com?&subject=${asunto3}&body=De parte ${input_nombre}
+       con direccion de email:${input_correo}
+       nos dice que-${texto1} `;
+  }
+  
+
+  
+}
