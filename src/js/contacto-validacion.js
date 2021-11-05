@@ -73,7 +73,6 @@ function validar5(){
 
     var posibleTexto=/^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     let input_mensaje = document.getElementById("texto").value;
-    
     //validaciones mensaje
     if(input_mensaje.length > 100 ||input_mensaje.length<0){
         alert("Error, el tamaño del mensaje no es correcto");
