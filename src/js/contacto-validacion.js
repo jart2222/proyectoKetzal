@@ -73,7 +73,6 @@ function validar5(){
 
     var posibleTexto=/^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     let input_mensaje = document.getElementById("texto").value;
-    
     //validaciones mensaje
     if(input_mensaje.length > 100 ||input_mensaje.length<0){
         alert("Error, el tamaño del mensaje no es correcto");
@@ -85,10 +84,10 @@ function validar5(){
     }
 }
 
--
 
 function crearlink(){
 
+    console.log("gola");
 
     if (validar1()==true || validar2() ==true || validar3() ==true || validar4()==true ||  validar5() ==true  ) {
 
@@ -102,7 +101,7 @@ function crearlink(){
         var asunto3 = document.getElementById("asunto1").value
 
         let anclacorreo=document.getElementById("correo");
-        anclacorreo.href =`mailto:jart2607@gmail.com?&subject=${asunto3}&body=De parte ${input_nombre}
+        anclacorreo.href =`mailto:ketzalcafeteria@gmail.com?&subject=${asunto3}&body=De parte ${input_nombre}
          con direccion de email:${input_correo}
          nos dice que-${texto1} `;
     }
