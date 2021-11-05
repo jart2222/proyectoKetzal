@@ -17,7 +17,7 @@
 /*Generales*/
 
 body {
-    background: yellow;
+    /* background: yellow; */
 }
 
 /*Barra de navegacion*/
@@ -26,7 +26,7 @@ body {
 }
 
 #menu button {
-    background-color: white;
+    background: linear-gradient( to bottom, #d5d7e5, #eee, #d5d7e5);
 }
 
 #menu > div img {
@@ -63,11 +63,8 @@ body {
 */
 
 #footer {
-    /* height: 410px; */
     background-image: url("../images/patternBlack.jpg");
-    overflow: scroll;
-    /* position: fixed;
-    bottom: 0; */
+    padding-top: 20px;
 }
 
 .casilla {
@@ -78,10 +75,9 @@ body {
 }
 
 .letrero {
-    background: url("../img/pxgray.png"),white !important;
+    background: linear-gradient( to bottom, #d5d7e5, #eee, #d5d7e5);
     height: 50px !important;
     line-height: 35px !important;
-    letter-spacing: 2px !important;
     letter-spacing: 2px !important;
     text-align: center !important;
     color: black !important;
@@ -129,13 +125,14 @@ body {
     transition: all 300ms;
 }
 
-#redes .icono {
+.icono {
     display: block;
     margin: 0px;
     margin-top: 20px;
     transform: translateX(-15%);
     transition: all 400ms;
 }
+
 #redes .overlay {
     display: block;
     height: 40px;
@@ -165,10 +162,50 @@ body {
 }
 
 #copyright {
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
     color: whitesmoke;
 }
 
 .accordion-item {
     background-color: transparent !important;
+}
+
+.accordion-header button {
+    background: linear-gradient( to bottom, #d5d7e5, #eee, #d5d7e5);
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+#localizacionFooter iframe {
+    width: 100%;
+}
+
+.iconoFooter a img {
+    margin-top: 30px;
+    height: 40px;
+    padding-left: 30px;
+}
+
+.overlayFooter {
+    display: block;
+    text-align: center;
+    height: 40px;
+    font-weight: 700;
+    text-shadow: 0px 0px 1px #ccc;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #ccc;
+    padding: 3px;
+    margin-left: 30%;
+    margin-top: -39px;
+    cursor: pointer;
+    color: white;
+    overflow: hidden;
+}
+
+.overlayFooter a {
+    text-decoration: none;
+    color: white;
 }
