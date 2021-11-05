@@ -1,0 +1,32 @@
+
+body {
+    background-image: url("../images/FondoContacto.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+img {
+    display: flex-end;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: beige;
+    padding-bottom: 10%;
+}
+.card {
+    background-color: transparent;
+    height: 10%; 
+}
+.trasparente{
+    background-color: transparent;
+}
+.textonombres{
+    color:white
+
+}
+#logoketzal{
+    position:flex;
+    z-index: -1;
+}
