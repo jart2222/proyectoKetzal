@@ -68,7 +68,7 @@ else if(a==3){
     `Desarrollador Java Full Stack y estudiante de Ing. de software.
     Profesional con habilidades informáticas capaz de trabajar Front End con HTML5, CSS3, JavaScript, Bootstrap 4.6 y 5.1  y Backend con Java. VCS Git y GitHub
     Habilidades en la resolución de problemas, trabajo en equipo, organizado, responsable, gestión del tiempo y estrés, con actitud siempre positiva.
-    `,"../src/images/PérezElizondo.jpg")
+    `,"../src/images/OscarMartínez.jpg")
     Oscar.printInfo(divP);
 }
 else if(a==4){
@@ -95,7 +95,7 @@ else if(a==6){
     Autodidacta y organizada. 
     Cuenta con una minuciosa atención al detalle para poder innovar en el mundo de la tecnología. 
     `,
-    "../src/images/PérezElizondo.jpg")
+    "../src/images/RodrigoNiebla.jpg")
     Daisy.printInfo(divP);
 }
 else if(a==7){
