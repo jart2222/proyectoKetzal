@@ -1,6 +1,7 @@
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
 body {
-    background-image: url("../images/FondoContacto.jpeg");
+    background-image: url("../images/FondoContacto.png");
+    background-position:center;
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
@@ -9,12 +10,9 @@ body {
 img {
     display: flex-end;
 }
-h2{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    color: beige;
-    padding-bottom: 10%;
-}
+
+
+
 .card {
     background-color: transparent;
     height: 10%; 
@@ -23,10 +21,16 @@ h2{
     background-color: transparent;
 }
 .textonombres{
-    color:white
+    color: black
 
 }
 #logoketzal{
-    position:flex;
+    width: 100%;
     z-index: -1;
 }
+#alert{
+    background-color: black;
+    color: white;
+
+}
+
