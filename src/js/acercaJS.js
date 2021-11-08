@@ -90,22 +90,21 @@ else if(a==4){
 }
 else if(a==5){
     let divP=document.getElementById("modal1")
-    let Armando=new person("Luis Fernando Melchor Hernández","luisfernandomelchorhernandez@gmail.com", 22,
+    let Fernando=new person("Luis Fernando Melchor Hernández","luisfernandomelchorhernandez@gmail.com", 22,
     `Sociólogo con interés en la programación, a pesar de no contar con una carrera afin, mi determinación me ha permitido aprender las herramientas y habilidades necesarias para ser un desarrollador Java full Stack.
-    `,
-    "../src/images/LuisFernando.jpg","https://www.linkedin.com/in/luis-fernando-melchor-hernandez-739755180/")
-    Armando.printInfo(divP);
+    `,"../src/images/LuisFernando.jpg","https://github.com/luisfernandoMH","https://www.linkedin.com/in/luis-fernando-melchor-hernandez-739755180/")
+    Fernando.printInfo(divP);
 }
 else if(a==6){
     let divP=document.getElementById("modal1")
-    let Daisy=new person("Rodrigo Niebla Torres López","rodtorresl123@gmail.com ", 22,
+    let Rodrigo=new person("Rodrigo Niebla Torres López","rodtorresl123@gmail.com ", 22,
     `Recién egresado del bootcamp como desarrollador Java full stack. 
     Buen líder, aficionado a aprender cosas nuevas e implementar el trabajo en equipo en las diversas actividades. 
     Autodidacta y organizada. 
     Cuenta con una minuciosa atención al detalle para poder innovar en el mundo de la tecnología. 
     `,
     "../src/images/RodrigoNiebla.jpg","https://github.com/iRoooooo","https://www.linkedin.com/in/rod-torres-730aa5221")
-    Daisy.printInfo(divP);
+    Rodrigo.printInfo(divP);
 }
 else if(a==8){
     let divP=document.getElementById("modal1")
