@@ -87,8 +87,6 @@ function validar5(){
 
 function crearlink(){
 
-    console.log("gola");
-
     if (validar1()==true || validar2() ==true || validar3() ==true || validar4()==true ||  validar5() ==true  ) {
 
         alert(" Acompleta los campos");
