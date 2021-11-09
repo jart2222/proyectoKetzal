@@ -1,0 +1,62 @@
+[
+    {
+        "precio": 120,
+        "id": 6,
+        "title": "Café Honduras",
+        "image": "../src/images/Json/cafeHonduras.jpeg"
+    },
+    {
+        "precio": 130,
+        "id": 7,
+        "title": "Café Borundi",
+        "image": "../src/images/Json/cafeBorundi.jpeg"
+    },
+    {
+        "precio": 90,
+        "id": 8,
+        "title": "Café Guatemala",
+        "image": "../src/images/Json/cafeGuatemala.jpeg"
+        
+    },
+    {
+        "precio": 150,
+        "id": 9,
+        "title": "Café Indonesia",
+        "image": "../src/images/Json/cafeIndonesia.jpeg"
+        
+    },
+    {
+        "precio": 70,
+        "id": 10,
+        "title": "Café Mimba",
+        "image": "../src/images/Json/cafeMimba.jpeg"
+        
+    },
+    {
+        "precio": 145,
+        "id": 11,
+        "title": "Café Mujeres",
+        "image": "../src/images/Json/cafeMujeres.jpeg"
+        
+    },
+    {
+        "precio": 168 ,
+        "id": 12,
+        "title": "Café Peru",
+        "image": "../src/images/Json/cafePeru.jpeg"
+        
+    },
+    {
+        "precio": 130,
+        "id": 13,
+        "title": "Café Petalo",
+        "image": "../src/images/Json/cafePetalo.jpeg"
+        
+    },
+    {
+        "precio": 179,
+        "id": 14,
+        "title": "Café Tziscao",
+        "image": "../src/images/Json/cafeTziscao.jpeg"
+    }
+]
