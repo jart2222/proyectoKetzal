@@ -14,16 +14,26 @@
         <link rel="icon" type="favicon/x-icon" href="#" />
         <title>Ketzal</title>
     </head>
-    <body>
+    <body style="background-color: #ffe6a7;">
         <!--Inicia cabecera y barra de navegacion-->
         <header id="Head">
             <!--DOM Inserta header-->
         </header>
-        <main>
-            <div id="productos">
-                
+        <div class="container">
+            <div class="row" id="cards"></div>
+        </div>
+        <template id="template" >
+            <div class="col-12 col-md-4 mb-4" >
+                <div class="card">
+                    <div class="card-body" style="background-color: #ffe6a7;">
+                        <a class="img-wrap"><img src="#" width="200" height="300" class=" img-fluid rounded"></a>
+                        <h5>Titulo</h5>
+                        <p>Precio</p>
+                        <button class="btn btn-dark" style="background-color:#23883F;">Agregar al carrito</button>
+                    </div>
+                </div>
             </div>
-        </main>
+        </template>
         <footer id="footer">
             <!--DOM Inserta pie página-->
         </footer>
