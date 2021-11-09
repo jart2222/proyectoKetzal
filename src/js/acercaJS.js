@@ -60,7 +60,7 @@ if(a==1){
     let Armando=new person("Jose Armando Roman Torres","jart2607@gmail.com", 22,
   `Desarrollador Javafull Stack, licenciado en Tecnologia, colaboracion en un proyecto de Automatas 
   celulares con Python, dominio  de HTML, CSS, Boostrap y Javascript  `,
-    "../src/images/PérezElizondo.jpg" ,"https://github.com/jart2222", "https://www.linkedin.com/in/jos%C3%A9-armando-rom%C3%A1n-torres-b3aa78221/")
+    "../src/images/JoseArmando.jpg" ,"https://github.com/jart2222", "https://www.linkedin.com/in/jos%C3%A9-armando-rom%C3%A1n-torres-b3aa78221/")
     Armando.printInfo(divP);
 }
 else if(a==2){
@@ -112,7 +112,7 @@ else if(a==8){
     `Ingeniero en geofísica, aficionado a la programación y a la naturaleza. Me encanta 
     conocer nuevos lugares. Busco desarrollarme profesionalmente en el desarrollo web y 
     también aplicar mis conocimientos en programación en la prospección sísmica.`
-    ,"../src/images/MiguelAngel.jpg","https://github.com/MikeCeron", "#")
+    ,"../src/images/MiguelAngel.jpg","https://github.com/MikeCeron", "https://www.linkedin.com/in/miguel-%C3%A1ngel-cer%C3%B3n-mart%C3%ADnez-926541185/")
     miguel.printInfo(divP);
 
 }
