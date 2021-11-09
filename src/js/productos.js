@@ -29,7 +29,7 @@ function readTextFile(file, callback) {
 const MostrarPeoductos = data => {
     data.forEach(item => {
         templateCard.querySelector('h5').textContent = item.title
-        templateCard.querySelector('p').textContent = item.precio
+        templateCard.querySelector('span').textContent = item.precio
 		templateCard.querySelector('img').setAttribute("src",item.image)
         templateCard.querySelector('button').dataset.id = item.id
         const clone = templateCard.cloneNode(true)
@@ -46,7 +46,7 @@ const addCarrito = e => {
 const setCarrito = item => {
     const producto = {
         title: item.querySelector('h5').textContent,
-        precio: item.querySelector('p').textContent,
+        precio: item.querySelector('span').textContent,
         id: item.querySelector('button').dataset.id,
     }
     if (carrito.hasOwnProperty(producto.id)) {
