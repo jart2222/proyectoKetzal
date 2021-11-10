@@ -54,4 +54,7 @@
     -webkit-transform: scale(.9);
             transform: scale(.9);   
 }
+#separacion{
+    padding: .5%;
+}
 
