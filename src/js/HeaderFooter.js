@@ -11,16 +11,16 @@ let HEAD = `
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item nav-link"><a href="./index.html">Inicio</a></li>
-                <li class="nav-item nav-link"><a href="./productos.html">Productos</a></li>
-                <li class="nav-item nav-link"><a href="./contacto.html">Contacto</a></li>
-                <li class="nav-item nav-link"><a href="./acerca.html">Acerca de</a></li>
+                <li class="nav-item nav-link"><a href="../index.html">Inicio</a></li>
+                <li class="nav-item nav-link"><a href="../pages/productos.html">Productos</a></li>
+                <li class="nav-item nav-link"><a href="../pages/contacto.html">Contacto</a></li>
+                <li class="nav-item nav-link"><a href="../pages/acerca.html">Acerca de</a></li>
                 <li class="nav-item nav-link">
                     <a href="https://goo.gl/maps/7e9axv6hUCUHQ85L9">
                         <img src="../src/images/locationIcon.png" alt="localización" />
                     </a>
                 </li>
-                <li class="nav-item nav-link"><a href="login.html"><img src="../src/images/userIcon.png" alt="usuario" /></a></li>
+                <li class="nav-item nav-link"><a href="../pages/login.html"><img src="../src/images/userIcon.png" alt="usuario" /></a></li>
             </ul>
         </div>
     </nav>
@@ -34,10 +34,10 @@ let FOOT = `
         </a>
         <div class="mt-3 menuFooter">
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./acerca.html">Acerca de</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html">Productos</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/acerca.html">Acerca de</a></li>
                 <li><a href="https://goo.gl/maps/7e9axv6hUCUHQ85L9">Ubicación</a></li>
             </ul>
         </div>

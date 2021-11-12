@@ -1,82 +1,60 @@
-body{
-    background-color: rgb(255, 255, 255); 
-}
 .container{
     background-color:#FFE6A7;
-    height: 1000px;
 }
 
-.seccion1{
-    background-image: url(/src/images/CafeFondoS1.jpeg);
-    background-repeat:no-repeat;
-    min-height: 70vh;
+#section1{
+    background-image: url(../images/CafeFondoS1.jpeg);
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
     
+    padding: 1vh;
+    gap: 2vh;
+
 }
 .seccion1-carru{
-    background-color: rgb(255, 255, 255); 
-    height: 350px;
-    margin: 10px;
-    border: solid 5px black;
-}
-#carouselExampleCaptions{
-    margin-left: 20px;
-    margin-right: 20px;
-    
-}
-.seccion1-descripcion{
-    background-color:#7A3F08;
-    min-width: 45vh;
-    /*height: 350px;*/
-    min-height:48vh;
-    padding: 10px;
-    margin: 10px;
-}
-.seccion1-descripcion-info{
-    margin-bottom: 25vh;
+    margin-top: 7vh;
+    text-align: center;
+    background-color: white;
+    height: 10%;
+    padding: 3vh;
 }
 
-.seccion2{
-    background-color: #FFE6A7;
+#section1-description{
     text-align: center;
-   
+    color: #ffff;
+    background-color:#4d2c0d ;
+    padding: 3vh;
 }
+.seccion1-imagen-carru{
+    margin-top: 20vh;
+}
+.title{
+    text-align: center;
+    border-bottom: solid #4d2c0d 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 .seccion2-Prom{
+    gap: 1vh;
     text-align: center;
-    border-bottom: solid 5px #7A3F08;
-    width: 60vh;
-    margin-left: 60vh;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
-.seccion2-contenedor{
-   
-    display: flex;
-    flex-direction: row;
-}
-.seccion2-img{
-    padding: 5vh;
-   
-}
-.seccion3{
-    background-color: #FFE6A7;
+.seccion3-Fav{
+    gap: 1vh;
     text-align: center;
+    margin-top: 2vh;
 }
-.seccion3-Mejor{
-    text-align: center;
-    border-bottom: solid 5px #7A3F08;
-    width: 60vh;
-    margin-left: 60vh;
-    margin-top: 5vh;
+
+.efecto{
+      -webkit-transition: 0.2s linear;
+              transition: 0.2s linear;              
 }
-.seccion3-contenedor{
-    display: flex;
-    flex-direction: row;
+.efecto:hover{
+    -webkit-transform: scale(.9);
+            transform: scale(.9);   
 }
-.seccion3-img{
-    padding: 5vh;
-    
+#separacion{
+    padding: .5%;
 }
+
