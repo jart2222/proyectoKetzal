@@ -49,55 +49,56 @@
     </header>
     <!--Termina cabecera y barra de navegacion-->
 
-    <main>
-        <div id="contacto" class="container-fluid justify-content-around row ">
-            <div id="logo-formulario" class="col-md-6 col-lg-6">
-                <img src="../src/images/logo.png">
-            </div>
+    <!--Inicia Formulario-->
+    <div class="container container-fluid" id="contacto">
+        <div class="container-sections row justify-content-center">
 
-            <div id="formulario" class="col-md-6 col-lg-6">
-                <h3 class="m-auto mb-3">Contáctanos</h2>
-
-                <form class="row g-3 mt-3">
-                    <div class="col-md-8 m-auto">
+            <section class="container-img col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12" id="logo-formulario">
+                <img class="imagen img-fluid" src="../src/images/logo.png" alt="">
+            </section>
+            
+            <section class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" id="formulario" style="border: #000000 solid 5px;">
+                <div>
+                    <h3>Contáctanos</h3>
+                </div>
+                
+                <form>
+                    <div class="row">
                         <label for="Nombre completo" class="form-label">Nombre:</label>
                         <input id="nombre" type="text" class="form-control" placeholder="Ingresa tu nombre" minlength="3" maxlength="18" required>
                     </div><!--Nombre-->
-
-                    <div class="col-md-8 m-auto">
+                    <div class="row">
                         <label for="Correo electrónico" class="form-label">Correo electrónico:</label>
                         <input id="mail" type="email" onchange="validar2()" class="form-control" placeholder="Ingresa tu correo" minlength="10" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                     </div><!--Email-->
-
-                    <div class="col-md-8 m-auto">
+                    <div class="row">
                         <label for="Teléfono" class="form-label">Número de teléfono:</label>
                         <input id="teléfono" type="text" onchange="validar3()" name="Teléfono" class="form-control" placeholder="Ingresa tu número" minlength="8" maxlength="10" required>
-                    </div><!--Teléfono-->
-
-                    <div class="col-md-8 m-auto">
+                    </div><!--Telefono-->
+                    <div class="row">
                         <label for="Asunto" name="asuntoform" class="form-label">Asunto:</label>
                         <input id="asunto1" type="text" onchange="validar4()" name="asuntoinput" class="form-control" placeholder="Ingresa el asunto" minlength="5" maxlength="30" required>
                     </div><!--Asunto-->
-
-                    <div class="col-md-8 m-auto">
+                    <div class="row">
                         <label for="Mensaje" class="form-label">Mensaje:</label>
                         <textarea id="texto" type="text" onchange="validar5()" class="form-control" placeholder="Ingresa tu mensaje" cols="30" rows="5" minlength="10" maxlength="200" required></textarea>
                     </div><!--Mensaje-->
-                     <!-- .col-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
+                    <div class="row" id="botones">
+                        <div class="col-6">
+                            <a href="#" class="btn" style="background-color: #fbfbfb;" id="correo" onclick="crearlink()">Enviar</a>
+                        </div>
+                        <div class="col-6">
+                            <button type="reset" name="Borrar" class="btn" style="background-color: #fbfbfb;">Borrar</button>                            
+                        </div>
+                    </div>
 
-                    <div id="botones" class="row" >
-                        <div class="col-3 col-md-3 col-lg-2 col-xl-1">
-                            <a href="#" class="btn btn-primary" id="correo" onclick="crearlink()">Enviar</a>
-                        </div>
-                        <div class="col-3 col-md-3 col-lg-2 col-xl-1">
-                            <button type="reset" name="Borrar" class="btn btn-dark">Borrar</button>
-                        </div>
-                        
-                    </div><!--Botones m-auto-->
-                </form><!--Formulario-->
-            </div><!--Contenedor formulario-->
-        </div><!--Contenedor formulario y logo-->
-    </main>
+                </form>
+            </section>
+        </div>
+    </div>
+    <!--Termina Formulario-->
+
+    
 
     <!--Inicia pie de página -->
     <footer id="footer">
