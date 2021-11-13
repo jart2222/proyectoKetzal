@@ -60,7 +60,7 @@ body{
     box-shadow: 5px 5px 5px gray;
 }
 
-#botones {
+/* #botones {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
@@ -69,4 +69,4 @@ body{
 #botones a,
 #botones button {
     width: 30%;
-}
+} */

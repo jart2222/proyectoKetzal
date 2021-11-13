@@ -83,11 +83,17 @@
                         <label for="Mensaje" class="form-label">Mensaje:</label>
                         <textarea id="texto" type="text" onchange="validar5()" class="form-control" placeholder="Ingresa tu mensaje" cols="30" rows="5" minlength="10" maxlength="200" required></textarea>
                     </div><!--Mensaje-->
+                     <!-- .col-	.col-sm-	.col-md-	.col-lg-	.col-xl- -->
 
-                    <div id="botones" class="col-8 m-auto row mt-3">
-                        <a href="#" class="btn btn-primary" id="correo" onclick="crearlink()">Enviar</a>
-                        <button name="Borrar" class="btn btn-warning" type="reset">Borrar</button>
-                    </div><!--Botones-->
+                    <div id="botones" class="row" >
+                        <div class="col-3 col-md-3 col-lg-2 col-xl-1">
+                            <a href="#" class="btn btn-primary" id="correo" onclick="crearlink()">Enviar</a>
+                        </div>
+                        <div class="col-3 col-md-3 col-lg-2 col-xl-1">
+                            <button type="reset" name="Borrar" class="btn btn-dark">Borrar</button>
+                        </div>
+                        
+                    </div><!--Botones m-auto-->
                 </form><!--Formulario-->
             </div><!--Contenedor formulario-->
         </div><!--Contenedor formulario y logo-->
