@@ -37,16 +37,22 @@
                     <div>
                         <div class="form-group">
                             <label for="exampleInputPassword1" class="row justify-content-center">Contraseña</label>
-                            <input type="password" class="form-control rounded-pill" id="contraseñap" aria-describedby="passwordHelpInline">
+                            <input type="password" class="form-control rounded-pill"  id="contraseñap"  onchange="validar4()" placeholder="Contraseña1" aria-describedby="passwordHelpInline">
                             <div class="row justify-content-center" >
                                 <small id="passwordHelpBlock" class="form-text text-muted ">
-                                    Tu contraseña no debe contenener mas de 8 caracteres
+                                    Tu contraseña debe contenener mas de 7 caracteres y menos de 20
                                 </small>
                             </div>
                         </div>
                     </div>
                                             
                 </form>
+
+                <div class="row justify-content-center">
+                    <div class="col-1">
+                        <button type="submit" onclick="crearjson()"class="btn btn-primary">Entrar</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
