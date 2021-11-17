@@ -14,6 +14,8 @@ body {
 
 .container * {
   box-sizing: border-box;
+  border-color: #000;
+  color:black;
 }
 
 .flex-outer,
@@ -40,7 +42,7 @@ body {
 }
 
 .flex-outer > li:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .flex-outer li label,
@@ -85,6 +87,7 @@ body {
 
 .flex-inner li {    
   width: 100px;
+  
 }
 
 .container{
@@ -95,3 +98,22 @@ body {
     border-color:black;
 }
 
+#formulario{
+  background: #F2E1C2;
+   /*  height: 50px;
+    width: 300px; */
+    /* letter-spacing: 2px; */
+    text-align: left;
+    color: black;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    line-height: 43px;
+    font-weight: 900;
+    box-shadow: 5px 5px 5px black ;
+    
+}
+
+.botones{
+  align-items: left;
+}

@@ -30,7 +30,7 @@
 }
 .title{
     text-align: center;
-    border-bottom: solid #4d2c0d 5px;
+    -bottom: solid #4d2c0d 5px;
     margin-left: 20%;
     margin-right: 20%;
 }
