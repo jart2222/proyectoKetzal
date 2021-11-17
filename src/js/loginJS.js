@@ -9,6 +9,6 @@ function leer(){
     var lastname = localStorage.getItem("correokey");
     var lastkey=localStorage.getItem("key");   
     if (correoj==lastname && contraseñaj==lastkey ) {
-        location.href ="https://www.youtube.com/"}
+        location.href ="../../pages/PaginaDesarrollador.html"}
         
 }
