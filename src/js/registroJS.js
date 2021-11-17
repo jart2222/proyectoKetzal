@@ -1,3 +1,5 @@
+
+
 function alertUser(mensajealert,color){
     alertanombre=document.getElementById("alertanombre");
     alertanombre.innerHTML=`<div class="alert alert-${color} alert-dismissible fade show" role="alert">
@@ -90,8 +92,7 @@ function validar4(){
 
 function crearjson(){
     document.getElementById("alertanombre").innerHTML="";
-
-    if (validar2() ==true || validar3() ==true || validar4==true) {
+    if (validar2() ==true || validar3() ==true || validar4()==true) {
         mensajealert="Campos imcompletos o erroneos";
         color="danger"
         alertUser(mensajealert,color);        
@@ -110,8 +111,29 @@ function crearjson(){
 
 
         
-    }
-    
-
-    
+    }   
 }
+
+function usuariosdefaul(){
+    person =[
+        {
+        "id":"",
+        "datos":[{ "name":"John", "correo":"jaer34r2@gmail.com","telefono": 4432234560, "contraseña" :"12343md34f",}]
+        },
+        {
+            "id": "",
+            "datos":[{ "name":"Pedro", "correo":"mariana1234@gmail.com","telefono": 4432234560, "contraseña" :"12343md34f",}]
+            },
+
+        ]
+    var contraseñas=[];
+    var correousuarios=[];
+    for (let index = 0; index < person.length; index++) {
+        person[index].id=index;
+        selector=person[index];
+        contraseñas.push(selector.datos[0].contraseña);
+        correousuarios.push(selector.datos[0].correo);
+    }
+    localStorage.setItem("correokey", correousuarios);
+    localStorage.setItem("key", contraseñas );
+    }
