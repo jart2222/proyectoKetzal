@@ -12,19 +12,52 @@
             integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
         <!--Bootstrap--->
         <link rel="icon" type="favicon/x-icon" href="#" />
+        <link rel="stylesheet" href="../src/css/estilologin.css">
         <title>Ketzal</title>
     </head>
-    <body>
+    <body onload="contraseñausuario()">
         <!--Inicia cabecera y barra de navegacion-->
         <header id="Head">
             <!--DOM Inserta header-->
         </header>
         <!--Termina cabecera y barra de navegacion-->
-        <main>
-            <div>
-                <div class="card">
-                </div>
+        <main> <!-- empieza login -->
+            <div class="espaciado">
+
             </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-5">
+                        <form >
+                            <div class="form-group">
+                                <label for="exampleInputEmail" class="row justify-content-center"> Correo electronico</label>
+                                <input type="email" class="form-control rounded-pill" id="correop" aria-describedby="emailHelp">
+                            </div>
+                            <div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1" class="row justify-content-center">Contraseña</label>
+                                    <input type="password" class="form-control rounded-pill" id="contraseñap">
+                                </div>
+                                  
+                            </div>                           
+                        </form>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-1">
+                        <button type="submit" onclick="leer()"class="btn btn-primary">Entrar</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        Si no cuentas con contraseña registrate <a href="registro.html">AQUI</a>
+
+                    </div>
+                </div>
+                <div class="espaciado">
+                </div>
+            </div> <!-- termina login -->
+            
         </main>
         <!--Inicia pie de página -->
         <footer id="footer">
@@ -42,5 +75,6 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
         <script src="../src/js/HeaderFooter.js"></script>
+        <script src="../src/js/loginJS.js"></script>
     </body>
 </html>
