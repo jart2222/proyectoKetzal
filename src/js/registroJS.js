@@ -126,8 +126,8 @@ function crearjson(){
         correousuarios.push(myobjeto2.datos[0].correo);
         contraseñas.push(myobjeto2.datos[0].contraseña);
         
-        localStorage.setItem("correokeyNuevos", correousuarios);
-        localStorage.setItem("keyNuevos", contraseñas);
+        localStorage.setItem("correokey", correousuarios);
+        localStorage.setItem("key", contraseñas);
         color="success"
         mensajealert="Datos registrados exitosamente, ¡MUCHAS GRACIAS!";
         alertUser(mensajealert,color);

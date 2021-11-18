@@ -1,6 +1,7 @@
 function contraseñausuario(){
     var contraseñas=[];
     var correousuarios=[];
+    if(localStorage.getItem("key")==null) {
     person =[
         {"id":"",
         "datos":[{ "name":"Armando", "correo":"jart2607@gmail.com","telefono": 5513572675, "contraseña" :"1234",}]
@@ -26,7 +27,7 @@ function contraseñausuario(){
     localStorage.setItem("correokey", correousuarios);
     localStorage.setItem("key", contraseñas);
     }
-
+}
 function leer(){
   
     var correoj=document.getElementById("correop").value; 
