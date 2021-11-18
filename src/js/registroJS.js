@@ -102,38 +102,40 @@ function crearjson(){
         let input_telefono = document.getElementById("teléfono").value;
         let input_contrasena = document.getElementById("contraseñap").value;
         let input_nombreusuario=document.getElementById("nombreusuario1").value;
-        const myobjeto={name:input_nombreusuario ,correo: input_correo,  telefono: input_telefono, contraseña: input_contrasena};
-        const myJSON = JSON.stringify(myobjeto);
-        console.log(myJSON);
+        
+        const myobjeto2={
+            "id":"",
+            "datos":[
+                        { "name":`${input_nombreusuario}`, "correo":`${input_correo}`,"telefono": `${input_telefono}`, "contraseña" :`${input_contrasena}`}
+                    ]
+        }
+        /*     traer elementos del formulario*/  
+        var lastkey=localStorage.getItem("key").split(",");
+        var lastname =localStorage.getItem("correokey").split(",");
+        /*     traer elementos del los correos del localstronge formulario*/  
+        
+        /*     traer elementos del las contraseñas del localstronge formulario*/
+        myobjeto2.id=lastname.length;
+        var contraseñas=[];
+        var correousuarios=[];
+        
+        for (let k = 0; k < lastname.length; k++) {
+            correousuarios.push(lastname[k]);
+            contraseñas.push(lastkey[k]);   
+        }
+        correousuarios.push(myobjeto2.datos[0].correo);
+        contraseñas.push(myobjeto2.datos[0].contraseña);
+        
+        localStorage.setItem("correokeyNuevos", correousuarios);
+        localStorage.setItem("keyNuevos", contraseñas);
         color="success"
         mensajealert="Datos registrados exitosamente, ¡MUCHAS GRACIAS!";
-        alertUser(mensajealert,color)
+        alertUser(mensajealert,color);
+
+
 
 
         
     }   
 }
 
-function usuariosdefaul(){
-    person =[
-        {
-        "id":"",
-        "datos":[{ "name":"John", "correo":"jaer34r2@gmail.com","telefono": 4432234560, "contraseña" :"12343md34f",}]
-        },
-        {
-            "id": "",
-            "datos":[{ "name":"Pedro", "correo":"mariana1234@gmail.com","telefono": 4432234560, "contraseña" :"12343md34f",}]
-            },
-
-        ]
-    var contraseñas=[];
-    var correousuarios=[];
-    for (let index = 0; index < person.length; index++) {
-        person[index].id=index;
-        selector=person[index];
-        contraseñas.push(selector.datos[0].contraseña);
-        correousuarios.push(selector.datos[0].correo);
-    }
-    localStorage.setItem("correokey", correousuarios);
-    localStorage.setItem("key", contraseñas );
-    }
