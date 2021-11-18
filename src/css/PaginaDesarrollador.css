@@ -1,27 +1,30 @@
 
 body {
   font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
-  background: #F2E1C2;
+
   color: #fff;
-  padding: 50px 0;
+  
 }
 
 .container {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
 .container * {
   box-sizing: border-box;
   border-color: #000;
   color:black;
+  
 }
 
 .flex-outer,
 .flex-inner {
   list-style-type: none;
   padding: 0;
+  
 }
 
 .flex-outer {
@@ -92,14 +95,17 @@ body {
 
 .container{
     color: #000;
+    
 }
 
 .form-container{
     border-color:black;
+    
 }
 
 #form_1{
-  background: #F2E1C2;
+  border: black solid 5px;
+  background-color: #F2F2F2;
    /*  height: 50px;
     width: 300px; */
     /* letter-spacing: 2px; */
@@ -110,10 +116,13 @@ body {
     margin-top: 20px;
     line-height: 43px;
     font-weight: 900;
-    box-shadow: 5px 5px 5px black ;
+    
+    
     
 }
 
 .botones{
   align-items: left;
+ 
+
 }
