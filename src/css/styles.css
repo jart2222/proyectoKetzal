@@ -17,12 +17,16 @@
 /*Generales*/
 
 body {
-    /* background: yellow; */
+    background: rgb(248,216,119);
+    background: linear-gradient(90deg, rgba(248,216,119,1) 0%, rgba(217,177,104,1) 26%, rgba(240,187,128,1) 52%, rgba(217,148,104,1) 76%, rgba(248,150,119,1) 100%);
+    min-height: 100%;
 }
 
 /*Barra de navegacion*/
-#menu {
-    background-image: url("../images/patternBlack.jpg");
+header {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #343434 !important;
 }
 
 #menu button {
@@ -44,7 +48,7 @@ body {
     display: block;
     text-decoration: none;
     margin-left: 20px;
-    color: #159f47;
+    color: #E6B31E;
     transition: all 300ms;
 }
 
@@ -63,10 +67,12 @@ body {
 */
 
 #footer {
-    position: relative;
-    background-image: url("../images/patternBlack.jpg");
+    margin-top: 50px;
+    background-color: #343434 !important;
     padding-top: 20px;
-    bottom: 0;
+    position: relative;
+    min-height: 500px;
+    clear: both;
 }
 
 .casilla {
@@ -110,7 +116,7 @@ body {
 
 .menuFooter ul li a:hover {
     transform: translateX(right to left);
-    color: #159f47;
+    color: #E6B31E;
 }
 
 #localizacion iframe {
@@ -158,16 +164,49 @@ body {
     color: white;
 }
 
+#redes .icono:hover img {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 4px #ccc ;
+}
+
 #redes .icono:hover .overlay{
     opacity: 1;
     transform: translateX(0%);
 }
 
 #copyright {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     color: whitesmoke;
+}
+
+.iconoAccordion {
+    display: block;
+    margin: 0px;
+    margin-top: 20px;
+
+}
+
+.overlayAccordion {
+    display: block;
+    height: 40px;
+    font-weight: 700;
+    text-shadow: 0px 0px 1px #ccc;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #ccc;
+    /* position: absolute; */
+    padding: 3px;
+    margin-left: 15%;
+    margin-top: -39px;
+    cursor: pointer;
+    color: white;
+}
+
+.overlayAccordion a {
+    text-decoration: none;
+    color: white;
 }
 
 .accordion-item {
