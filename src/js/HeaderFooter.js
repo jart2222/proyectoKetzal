@@ -3,7 +3,9 @@ const anclaFooter=document.getElementById("footer");
 let HEAD = `
     <nav id="menu" class="navbar navbar-expand-lg navbar-light">
         <div class="navbar-brand">
-            <img src="../src/images/logo.png" alt="logo" />
+            <a href="../pages/index.html">
+                <img src="../src/images/logo.png" alt="logo" />
+            </a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,7 +13,7 @@ let HEAD = `
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item nav-link"><a href="../index.html">Inicio</a></li>
+                <li class="nav-item nav-link"><a href="../pages/index.html">Inicio</a></li>
                 <li class="nav-item nav-link"><a href="../pages/productos.html">Productos</a></li>
                 <li class="nav-item nav-link"><a href="../pages/contacto.html">Contacto</a></li>
                 <li class="nav-item nav-link"><a href="../pages/acerca.html">Acerca de</a></li>
