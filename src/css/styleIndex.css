@@ -4,6 +4,7 @@
     background: url("../images/coffeeBackground.png");
     background-size: 200%;
     animation: coffeeBack 10s linear;
+    overflow: hidden;
 }
 
 @keyframes coffeeBack {
@@ -18,7 +19,7 @@
 
 #portada img {
     display: block;
-    height: 50vh;
+    height: 40vh;
     margin: 0 auto;
     animation: quetzal 2s linear; 
 }
@@ -91,4 +92,8 @@
 .animacionCafe:hover .cafeteria span,
 .animacionCafe:hover .ketzal span {
     transition-delay: 0
+}
+
+#carrusel {
+    width: 80vh;
 }

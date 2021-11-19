@@ -13,7 +13,7 @@
 
 .container .row .col-lg-4 {
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .card {
@@ -127,4 +127,25 @@
     .container .row .col-lg-4 {
         margin: 20px 0px
     }
+}
+
+#acercaDe {
+    border-radius: 15px;
+    height: 300px;
+}
+
+#logo-formulario {
+    background: rgb(217,182,80);
+    background: radial-gradient(circle, rgba(217,182,80,1) 0%, rgba(131,88,11,1) 100%);
+    /* border-radius: 15px 0px 0px 15px; */
+}
+
+#infoAcerca {
+    background: rgb(255,239,160);
+    background: radial-gradient(circle, rgba(255,239,160,1) 0%, rgba(255,213,126,1) 100%);
+    /* border-radius: 0px 15px 15px 0px; */
+}
+
+#logo-formulario img {
+    height: 70%;
 }
