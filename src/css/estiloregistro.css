@@ -3,7 +3,38 @@
 }
 
 body{
-
    background-color: bisque;
-    
+}
+
+#registroForm {
+    text-align: center;
+}
+
+#registroForm small {
+    text-align: center;
+}
+
+#registroForm button {
+    background-color: #116e37;
+    border: #116e37;
+    transition: all 0.3s;
+}
+
+#registroForm button:hover {
+    background-color: #189d48;
+    box-shadow: 0px 0px 5px #ccc inset;
+}
+
+.container-img{
+    margin: auto;
+}
+
+#logo-formulario {
+   text-align: center;
+   padding: 1%;
+   height: 45%;
+}
+
+#logo-formulario img {
+    height: 30vh;
 }

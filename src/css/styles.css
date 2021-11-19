@@ -63,8 +63,10 @@ body {
 */
 
 #footer {
+    position: relative;
     background-image: url("../images/patternBlack.jpg");
     padding-top: 20px;
+    bottom: 0;
 }
 
 .casilla {

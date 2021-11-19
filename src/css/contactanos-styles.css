@@ -29,8 +29,6 @@ body{
     
 }
 
-
-
 #formulario input[type="text"],
 #formulario input[type="email"],
 
@@ -58,9 +56,6 @@ body{
 
 #formulario h3 {
     background: url("../images/pxgray.png"),white;
-   /*  height: 50px;
-    width: 300px; */
-    /* letter-spacing: 2px; */
     text-align: center;
     color: black;
     border-radius: 5px;
