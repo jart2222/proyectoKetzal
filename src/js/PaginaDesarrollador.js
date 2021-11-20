@@ -87,10 +87,9 @@ document.addEventListener('DOMContentLoaded', e => {
     });
 });
 function iniciarProductos(){
-    //localStorage.removeItem("catalogo");
-    if(localStorage.getItem("catalogo")!=null) {
+   
+    if(localStorage.getItem("catalogo")!=null) {//si ya existe 
         let totalProductosAlmacenados=JSON.parse(localStorage.getItem("catalogo"));
-        console.log("ya hay productos almacenados");
         return(totalProductosAlmacenados);
     }
     else{
