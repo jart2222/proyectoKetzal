@@ -1,203 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap--->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--Bootstrap--->
-    <link rel="stylesheet" href="../src/css/styles.css" />
-    <link rel="stylesheet" href="../src/css/styleAcerca.css" />
+    <title>Ketzal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../src/css/acercadenostros.css">
 
-    <script type="text/javascript" src="../src/js/main.js"></script>
-    <!-- <script type="text/javascript" src="../src/js/jquery-3.6.0.js"></script> -->
-    <link rel="icon" type="favicon/x-icon" href="#" />
-    <title>Acerca de</title>
 </head>
-
 <body>
-    <!--Inicia cabecera y barra de navegacion-->
-    <header id="Head">
-        <!--DOM Inserta header-->
-    </header>
-    <!--Termina cabecera y barra de navegacion-->
+    <section class="container">
+    
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 fotosinicio">
+                <img src="../src/images/Rectangle 37.png" class="img-fluid" alt="...">
+                
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 fotosinicio">
+                <img src="../src/images/Rectangle 38.png" class="img-fluid" alt="...">
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 fotosinicio">
+                <img src="../src/images/Rectangle 39.png" class="img-fluid" alt="...">
 
-    <!-- <div id="acercaDe" class="container">
-        <div class="container-sections row">
-            <section id="logo-formulario" class="container-img align-items-center col-xl-5 col-lg-5 col-md-5 col-sm-10 col-10">
-                <img class="imagen img-fluid" src="../src/images/logo.png" alt="">
-            </section>
+            </div>
+            
 
-            <section id="infoAcerca" class="col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10">
-                <div>
-                    <h3>Acerca de nosotros</h3>
-                    <p>
-                        Somos un equipo de desarrolladores Java Fullstack, los cuales se formaron en el bootcamp de
-                        Generation&copy; .
-                        A partir de nuestras habilidades, nació este proyecto, ya que permitía combinar dos de nuestras
-                        grandes pasiones: el café y la programación.
-                    </p>
-                </div>
-            </section>
         </div>
-    </div> -->
+        
 
-    <div class="container">
+
+
+    </section> <!-- fotos parte de arriba -->
+
+
+
+    <section class="container ">
+
         <div class="row">
-            <div class="col-lg-4">
-                <div class="card p-0">
-                    <div class="card-image"> <img src="../src/images/Armando.png" alt="Armando Román"> </div>
-                    <div class="card-content d-flex flex-column align-items-center">
-                        <h4 class="pt-2">Armando Román</h4>
-                        <h5>Desarrollador Back-End</h5>
-                        <p>
-                            Licenciado en Tecnologia, colaboré en un proyecto de Automatas celulares con Python, tengo
-                            habilidades en HTML5, CSS3, Boostrap y Javascript. Estoy interesado en ejercer como
-                            desarrollador Java Fullstack.
-                        </p>
-                        <ul class="social-icons d-flex justify-content-center">
-                            <li style="--i:1"> <a href="https://github.com/jart2222"> <img src="../src/images/git.png">
-                                </a> </li>
-                            <li style="--i:2"> <a href="#"> <img src="../src/images/linkedIn.png"> </a> </li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="col-12">
+                <p class="textocentral"> Somos una e-commerce amante  del café internacional que nos recuerda la belleza del grano como un tipo de mágia que puedes tomar</p>
             </div>
-            <div class="col-lg-4">
-                <div class="card p-0">
-                    <div class="card-image"> <img src="../src/images/LuisFer.jpg" alt="Luis Melchor"> </div>
-                    <div class="card-content d-flex flex-column align-items-center">
-                        <h4 class="pt-2">Luis Melchor</h4>
-                        <h5>Desarrollador Front-End</h5>
-                        <p>
-                            Sociólogo con interés en la programación, a pesar de no contar con una carrera afín, mi
-                            determinación me ha permitido aprender las herramientas y habilidades necesarias para ser un
-                            desarrollador Java full Stack.
-                        </p>
-                        <ul class="social-icons d-flex justify-content-center">
-                            <li style="--i:1"> <a href="https://github.com/luisfernandoMH"> <img
-                                        src="../src/images/git.png"> </a> </li>
-                            <li style="--i:2"> <a href="#"> <img src="../src/images/linkedIn.png"> </a> </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card p-0">
-                    <div class="card-image"> <img src="../src/images/Rodrigo.jpg" alt="Rodrigo Niebla"> </div>
-                    <div class="card-content d-flex flex-column align-items-center">
-                        <h4 class="pt-2">Rodrigo Niebla</h4>
-                        <h5>Desarrollador Front-End</h5>
-                        <p>
-                            Aficionado a aprender cosas nuevas y trabajar en equipo en diversas actividades. Autodidacta
-                            y organizado. Cuento con una minuciosa atención al detalle
-                            para poder innovar en el mundo de la tecnología.
-                        </p>
-                        <ul class="social-icons d-flex justify-content-center">
-                            <li style="--i:1"> <a href="https://github.com/iRoooooo"> <img src="../src/images/git.png">
-                                </a> </li>
-                            <li style="--i:2"> <a href="#"> <img src="../src/images/linkedIn.png"> </a> </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
         </div>
-        <div class="row mt-4">
-            <div class="col-lg-4">
-                <div class="card p-0">
-                    <div class="card-image"> <img src="../src/images/Miguel.jpg" alt="Miguel Cerón"> </div>
-                    <div class="card-content d-flex flex-column align-items-center">
-                        <h4 class="pt-2">Miguel Cerón</h4>
-                        <h5>Desarrollador Front-End</h5>
-                        <p>
-                            Ing. en geofísica, aficionado a la programación y a la naturaleza. Me encanta conocer
-                            nuevos lugares. Busco ejercer profesionalmente en el desarrollo web y aplicar
-                            mis conocimientos en la prospección sísmica.
-                        </p>
-                        <ul class="social-icons d-flex justify-content-center">
-                            <li style="--i:1"> <a href="https://github.com/MikeCeron"> <img src="../src/images/git.png">
-                                </a> </li>
-                            <li style="--i:2"> <a href="#"> <img src="../src/images/linkedIn.png"> </a> </li>
-                        </ul>
-                    </div>
-                </div>
+
+
+    </section> <!-- termina texto -->
+    
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <img src="../src/images/Rectangle 44.png" class="img-fluid imagencentral" alt="imagenescental">
             </div>
-            <div class="col-lg-4">
-                <div class="card p-0">
-                    <div class="card-image"> <img src="../src/images/Saul.jpg" alt="Saúl Pérez"> </div>
-                    <div class="card-content d-flex flex-column align-items-center">
-                        <h4 class="pt-2">Saúl Pérez</h4>
-                        <h5>SCRUM Master</h5>
-                        <p>
-                            Recién egresado de Lic. en tecnología de la UNAM, disfruto trabajar en
-                            equipo, a familiarizarme con nuevos conceptos, decidido a especializarme en el desarrollo de
-                            software.
-                        </p>
-                        <ul class="social-icons d-flex justify-content-center">
-                            <li style="--i:1"> <a href="https://github.com/ElizOct98"> <img src="../src/images/git.png">
-                                </a> </li>
-                            <li style="--i:2"> <a href="#"> <img src="../src/images/linkedIn.png"> </a> </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card p-0">
-                    <div class="card-image"> <img src="../src/images/Oscar.jpg" alt="Oscar Martínez"> </div>
-                    <div class="card-content d-flex flex-column align-items-center">
-                        <h4 class="pt-2">Oscar Martínez</h4>
-                        <h5>Desarrollador Back-End</h5>
-                        <p>
-                            Profesional con habilidades informáticas capaz de trabajar Front End con HTML5, CSS3,
-                            JavaScript, Bootstrap 4.6 y 5.1 y Backend con Java. Habilidades en la resolución de
-                            problemas, trabajo en equipo, organizado.
-                        </p>
-                        <ul class="social-icons d-flex justify-content-center">
-                            <li style="--i:1"> <a href="https://github.com/OscarMtz1111"> <img
-                                        src="../src/images/git.png"> </a> </li>
-                            <li style="--i:2"> <a href="#"> <img src="../src/images/linkedIn.png"> </a> </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
         </div>
-        <div class="row justify-content-center mt-4">
-            <div class="col-lg-4">
-                <div class="card p-0">
-                    <div class="card-image"> <img src="../src/images/Daisy.jpg" alt="Daisy Matus"> </div>
-                    <div class="card-content d-flex flex-column align-items-center">
-                        <h4 class="pt-2">Daisy Matus</h4>
-                        <h5>Desarrollador Back-End</h5>
-                        <p>
-                            Manejo de diversas plataformas digitales con intereses en cyber
-                            security y temas ambientales. Me encanta trabajo colaborativo y tengo
-                            interés por participar en la solución de problemáticas actuales.
-                        </p>
-                        <ul class="social-icons d-flex justify-content-center">
-                            <li style="--i:1"> <a href="https://github.com/dmatmo"> <img src="../src/images/git.png">
-                                </a> </li>
-                            <li style="--i:2"> <a href="#"> <img src="../src/images/linkedIn.png"> </a> </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
+    </section>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" id="card1">
+
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" id="card2">
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" id="card3">
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" id="card4">
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" id="card5">
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" id="card6">
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" id="card7">
+
         </div>
     </div>
 
-    <!--Inicia pie de página -->
-    <footer id="footer">
-        <!--DOM Inserta pie página-->
-    </footer>
-    <!--Termina pie de página-->
+</div>  <!-- cards de integrantes -->
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="../src/js/HeaderFooter.js"></script>
+
+    
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="../src/js/Acercadenosotros.js"></script>
 </body>
-
 </html>
