@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+body{
+    font-family: 'Noto Sans', sans-serif;
+    color:#006E59;
+    font-weight: bold;
+    text-align: center;
+    /* font-size: x-large; */
+
+
+}
+
+
+.ford nav:first-child:hover{
+    background-color:rgba(126, 165, 103, 0.096);
+    margin: 1px solid black;
+}
+
+
+
+.formulario2{
+    background-color: white;
+}
+.formulario2:hover{
+    background-color:rgba(126, 165, 103, 0.096);
+}
+
+
+
+
+.campos{
+    text-align: left;
+    color:#623307;
+    font-size: larger;  
+    margin-bottom: 2%;  
+
+}
+
+
+
+.separacion{
+    margin-bottom: 10%;
+    pointer-events:none;
+}
+
+
+
+.colorinput{
+    margin-bottom: 6%;
+    height: 50px;
+    border: 0px;
+    background-color: rgba(196, 196, 196, 0.205);
+
+}
+
+.colorinput:hover{
+    background-color: rgba(196, 196, 196, 0.205);
+
+}
+.titulos{
+    pointer-events:none;
+    font-weight: bolder;
+    color: #006E59;
+}
+
+h1{
+    pointer-events:none;
+}
+
+.botones{
+    text-align: right;
+    border: 0px;
+}
