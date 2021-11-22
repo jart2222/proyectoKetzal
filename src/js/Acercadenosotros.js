@@ -127,8 +127,13 @@ let Miguel=new Miembros("Miguel Angel Cerón Martínez","../src/images/Miguel.jp
                     ,"https://github.com/MikeCeron" , "https://www.linkedin.com/in/miguel-%C3%A1ngel-cer%C3%B3n-mart%C3%ADnez-926541185/")
 
 Miguel.agregarcard()
-
-const card7 =document.getElementById("card7");
-
 card7.innerHTML = Miguel.card
 /* Termina Septimo miembro */
+const card8 =document.getElementById("card8");
+let Paulina=new Miembros("Paulyna Campuzano Sánchez","../src/images/Paulina.png","This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+                        ,"https://github.com/PaulynaC","https://www.linkedin.com/in/paulyna-campuzano")
+
+Paulina.agregarcard();
+card8.innerHTML = Paulina.card
+
+
