@@ -4,13 +4,13 @@ function contraseñausuario(){
     if(localStorage.getItem("key")==null) {
         person =[
             {"id":"",
-                "datos":[{ "name":"admin", "correo":"admin@gmail.com","telefono": 4432234560, "contraseña" : "ketzal1",}]
+                "datos":[{ "name":"admin", "correo":"admin@gmail.com", "contraseña" : "ketzal1",}]
             },
             {"id":"",
-                "datos":[{ "name":"Armando", "correo":"jart2607@gmail.com","telefono": 5513572675, "contraseña" :"1234",}]
+                "datos":[{ "name":"Armando", "correo":"jart2607@gmail.com", "contraseña" :"1234",}]
             },
             {"id": "",
-                "datos":[{ "name":"Pedro", "correo":"mariana1234@gmail.com","telefono": 4432234560, "contraseña" : "12w35343md34f",}]
+                "datos":[{ "name":"Pedro", "correo":"mariana1234@gmail.com","contraseña" : "12w35343md34f",}]
             },
         ]
         for (let index = 0; index < person.length; index++) {
@@ -29,14 +29,14 @@ function leer(){
     var contraseñaj=document.getElementById("contraseñap").value;
     
     /*     traer elementos del formulario*/  
-    var lastkey=localStorage.getItem("key").split(",");
-    var lastname=localStorage.getItem("correokey").split(",");
+    let lastkey=localStorage.getItem("key").split(",");
+    let lastname=localStorage.getItem("correokey").split(",");
     /*     traer elementos del los correos del localstronge formulario*/  
      /*     traer elementos del las contraseñas del localstronge formulario*/
-     var longitudlastkey=localStorage.getItem("key").split(",").length;
+    let longitudlastkey=localStorage.getItem("key").split(",").length;
      for (let i = 1; i < longitudlastkey; i++) {
  
-         if (correoj==lastname[0] && contraseñaj==lastkey[0] ) {
+         if (correoj==lastname[0] && contraseñaj==lastkey[0] ) { /* solo se ejecuta para el administrador */
             let usuarioAceptado=JSON.stringify("admin@gmail.com");
             localStorage.removeItem("usuarioActivo");
             localStorage.setItem("usuarioActivo",usuarioAceptado);
@@ -44,17 +44,11 @@ function leer(){
             break;
          }
  
-         if(correoj==lastname[i] && contraseñaj==lastkey[i]){
+         if(correoj==lastname[i] && contraseñaj==lastkey[i]){/* solo se ejecuta para los usuarios*/
              location.href ="../../pages/productos.html"
              break;
          }
          
      }
         
-}
-
-function enviarusuarioa(){
-    
-    
-
 }

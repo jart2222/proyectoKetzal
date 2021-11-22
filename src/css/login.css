@@ -9,28 +9,29 @@ body{
 
 }
 
-
 .ford nav:first-child:hover{
     background-color:rgba(126, 165, 103, 0.096);
     margin: 1px solid black;
 }
 
+.formulario1{
+    background-color:white;
+    border: 2px solid black;
+}
 
 
 .formulario2{
-    background-color: white;
+    background-color:white;
+
 }
 .formulario2:hover{
-    background-color:rgba(126, 165, 103, 0.096);
+    background-color: rgba(126, 165, 103, 0.096);
 }
-
-
-
 
 .campos{
     text-align: left;
     color:#623307;
-    font-size: larger;  
+    font-size:medium ;  
     margin-bottom: 2%;  
 
 }
@@ -69,4 +70,5 @@ h1{
 .botones{
     text-align: right;
     border: 0px;
+    margin-bottom: 10%;
 }
