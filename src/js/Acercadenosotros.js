@@ -130,7 +130,7 @@ Miguel.agregarcard()
 card7.innerHTML = Miguel.card
 /* Termina Septimo miembro */
 const card8 =document.getElementById("card8");
-let Paulina=new Miembros("Paulyna Campuzano Sánchez","../src/images/Paulina.png","This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+let Paulina=new Miembros("Paulyna Campuzano Sánchez","../src/images/Paulina.jpg","This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
                         ,"https://github.com/PaulynaC","https://www.linkedin.com/in/paulyna-campuzano")
 
 Paulina.agregarcard();
