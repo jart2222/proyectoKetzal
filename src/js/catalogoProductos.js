@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', e => {
             const ancla=document.getElementById("cards");
             for(idProducto in totalProductos){
                 let card=`
-                <div class="col-12 col-md-4 mb-4" 
+                <div class="col-12 col-md-4 mb-4 cardsestilos">
                     <div class="card">
                         <img src="${totalProductos[idProducto].imagen}" class="card-img-top" >
                         <div class="card-body">
                             <h5>${totalProductos[idProducto].nombre}</h5>
                             <h6>$${totalProductos[idProducto].precio} / ${totalProductos[idProducto].cantidad} gr.</h6>
-                            <p class="card-text" style="text-align: justify;">${totalProductos[idProducto].descripcion}</p>
+                            <p class="card-text" >${totalProductos[idProducto].descripcion}</p>
                             <button type="submit" class="btn btn-success">Agregar al carrito</button>
                         </div>
                     </div>   
@@ -47,7 +47,7 @@ function crearProductos(){
         id: 1,
         cantidad: 180,
         imagen: "../src/images/Json/cafeHonduras.jpeg",
-        descripcion: "café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
          
     };
     totalProductos[2] = {
@@ -56,7 +56,7 @@ function crearProductos(){
         id: 2,
         cantidad: 200,
         imagen: "../src/images/Json/cafeBorundi.jpeg",
-        descripcion: "café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
          
     };
     totalProductos[3] = {
@@ -65,7 +65,7 @@ function crearProductos(){
         id: 3,
         cantidad: 100,
         imagen: "../src/images/Json/cafeGuatemala.jpeg",
-        descripcion: "café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
          
     };
     totalProductos[4] = {
@@ -74,7 +74,7 @@ function crearProductos(){
         id: 4,
         cantidad: 110,
         imagen: "../src/images/Json/cafeIndonesia.jpeg",
-        descripcion: "café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
          
     };
     totalProductos[5] = {
@@ -83,7 +83,7 @@ function crearProductos(){
         id: 5,
         cantidad: 210,
         imagen: "../src/images/Json/cafeMimba.jpeg",
-        descripcion: "café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
          
     };
     totalProductos[6] = {
@@ -92,7 +92,7 @@ function crearProductos(){
         id: 6,
         cantidad: 360,
         imagen: "../src/images/Json/cafeMujeres.jpeg",
-        descripcion: "café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
          
     };
     totalProductos[7] = {
@@ -101,7 +101,7 @@ function crearProductos(){
         id: 7,
         cantidad: 400,
         imagen: "../src/images/Json/cafePeru.jpeg",
-        descripcion: "café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
          
     };
     totalProductos[8] = {
@@ -110,7 +110,7 @@ function crearProductos(){
         id: 8,
         cantidad: 87,
         imagen: "../src/images/Json/cafePetalo.jpeg",
-        descripcion: "café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
          
     };
     totalProductos[9] = {
@@ -119,7 +119,7 @@ function crearProductos(){
         id: 9,
         cantidad: 270,
         imagen: "../src/images/Json/cafeTziscao.jpeg",
-        descripcion: "café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
          
     };
     return(totalProductos);
