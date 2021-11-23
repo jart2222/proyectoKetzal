@@ -7,7 +7,7 @@
 
 .container-fondo{
 
-    background-image: url(fondoPrincipal.jpg); height:465px;
+    background-image: url(../images/fondoPrincipal.jpg); height:465px;
     background-position:100%;
     background-size: cover;
     background-position: center;
@@ -15,7 +15,7 @@
 
 .container-fondo-txt{
     
-    background-image: url(color3.png);
+    background-image: url(../images/color3.png);
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover;
