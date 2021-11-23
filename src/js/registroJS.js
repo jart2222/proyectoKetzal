@@ -1,20 +1,30 @@
 
 
 function alertUser(mensajealert,color){
-    alertanombre=document.getElementById("alertanombre");
-    alertanombre.innerHTML=`<div class="alert alert-${color} alert-dismissible fade show" role="alert">
-                                    <strong>${mensajealert}
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>`
+    let alertanombre=document.getElementById("alertanombre");
+    alertanombre.innerHTML=`<div class="alert alert-colorinput ${color} alert-dismissible fade show" role="alert">
+                                <strong>${mensajealert} </strong> 
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>`
+}
 
+
+function validar1(){
+    document.getElementById("alertanombre").innerHTML=""; /* reinicia el div del mensaje*/
+    let input_nombreusuario=document.getElementById("nombreusuario1").value;
+    if (input_nombreusuario.length <= 5 || input_nombreusuario>= 20 ) {
+        mensajealert="Sin Nombre de usuario";
+        color="warning"
+        alertUser(mensajealert, color);
+
+        return true;
+    }
 
 }
 
 
 function validar2(){
-
+    document.getElementById("alertanombre").innerHTML=""; /* reinicia el div del mensaje*/
     let input_correo = document.getElementById("mail").value;
     var posibleTexto=/^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
     var posibleCorreo=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
@@ -22,14 +32,14 @@ function validar2(){
      //validación correo
      if(input_correo.length>40||input_correo.length<10){
         mensajealert="Tamaño no permitido, por favor ocupa un correo valido";
-        color="danger"
+        color="warning"
         alertUser(mensajealert, color);
         
         return true;
     }
     if(!posibleCorreo.exec(input_correo)){
         mensajealert="correo no valido";
-        color="danger"
+        color="warning"
         alertUser(mensajealert,color);
         return true;
     }
@@ -38,51 +48,31 @@ function validar2(){
     
 
 }
-function validar3() {
 
-    var posibleNumero=/^[0-9]+$/;
-    let input_telefono = document.getElementById("teléfono").value;
-    document.getElementById("alertanombre").innerHTML="";
-
-    //validaciones teléfono
-    if(input_telefono.length > 10||input_telefono.length<8){
-        mensajealert="Error, el tamaño del teléfono no es correcto";
-        color="danger"
-        alertUser(mensajealert,color);
-        return true;
-    }
-    if(!input_telefono.match(posibleNumero)){
-        mensajealert="El teléfono solo puede contener numeros";
-        color="danger"
-        alertUser(mensajealert,color);
-        return true;
-    }
-    
-}
 function validar4(){
     //validaciones contraseña
-    document.getElementById("alertanombre").innerHTML="";
+    document.getElementById("alertanombre").innerHTML=""; /* reinicia el div del mensaje*/
     var regularExpression = /\d\D/ ;
     var regularEspacio= /\s/;
 
 
-    let input_contrasena = document.getElementById("contraseñap").value;
+    let input_contrasena = document.getElementById("contraseñas").value;
 
     if(input_contrasena.length < 8 || input_contrasena.length>21){
         mensajealert="Error, el tamaño de la contraseña no es correcto";
-        color="danger"
+        color="warning"
         alertUser(mensajealert,color); 
         return true;
     }
     if(!regularExpression.exec(input_contrasena)){
         mensajealert="la Contraseña debe tener al menos un número o una letra";
-        color="danger"
+        color="warning"
         alertUser(mensajealert,color);
         return true;
     }
     if(regularEspacio.test(input_contrasena)){
         mensajealert="No debe contener espacios";
-        color="danger"
+        color="warning"
         alertUser(mensajealert,color);
         return true;
     }
@@ -90,52 +80,74 @@ function validar4(){
     
 }
 
+
+function validar5(){
+    document.getElementById("alertanombre").innerHTML=""; /* reinicia el div del mensaje*/
+    let input_contrasena = document.getElementById("contraseñas").value;
+    let input_contrasena2 = document.getElementById("contraseñas2").value;
+    if (input_contrasena == input_contrasena2) {
+        mensajealert="No son la misma contraseña";
+        color="warning"
+        alertUser(mensajealert,color);
+        return true;
+    }
+}
+
 function crearjson(){
+    document.getElementById("alertanombre").innerHTML=""; /* reinicia el div del mensaje*/
     document.getElementById("alertanombre").innerHTML="";
-    if (validar2() ==true || validar3() ==true || validar4()==true) {
+    if (validar2()==true || validar4()==true || validar1()==true || validar5()==true) {
         mensajealert="Campos imcompletos o erroneos";
-        color="danger"
+        color="warning"
         alertUser(mensajealert,color);        
     }
     else {
         let input_correo = document.getElementById("mail").value;
-        let input_telefono = document.getElementById("teléfono").value;
-        let input_contrasena = document.getElementById("contraseñap").value;
+        let input_contrasena= document.getElementById("contraseñas").value;
         let input_nombreusuario=document.getElementById("nombreusuario1").value;
+        Datos_exitoso(input_correo,input_contrasena,input_nombreusuario)
+        /*     traer elementos del formulario*/
         
-        const myobjeto2={
-            "id":"",
-            "datos":[
-                        { "name":`${input_nombreusuario}`, "correo":`${input_correo}`,"telefono": `${input_telefono}`, "contraseña" :`${input_contrasena}`}
-                    ]
-        }
-        /*     traer elementos del formulario*/  
-        var lastkey=localStorage.getItem("key").split(",");
-        var lastname =localStorage.getItem("correokey").split(",");
-        /*     traer elementos del los correos del localstronge formulario*/  
-        
-        /*     traer elementos del las contraseñas del localstronge formulario*/
-        myobjeto2.id=lastname.length;
-        var contraseñas=[];
-        var correousuarios=[];
-        
-        for (let k = 0; k < lastname.length; k++) {
-            correousuarios.push(lastname[k]);
-            contraseñas.push(lastkey[k]);   
-        }
-        correousuarios.push(myobjeto2.datos[0].correo);
-        contraseñas.push(myobjeto2.datos[0].contraseña);
-        
-        localStorage.setItem("correokey", correousuarios);
-        localStorage.setItem("key", contraseñas);
-        color="success"
-        mensajealert="Datos registrados exitosamente, ¡MUCHAS GRACIAS!";
-        alertUser(mensajealert,color);
-
-
-
-
-        
-    }   
+           
+    } 
 }
+
+function Datos_exitoso(input_correo,input_contrasena,input_nombreusuario){
+    var myobjeto2={
+        "id":"",
+        "datos":[
+                    { "name":`${input_nombreusuario}`, "correo":`${input_correo}`, "contraseña" :`${input_contrasena}`}
+                ]
+    }
+    /*     crear objeto con datos  del formulario*/
+    
+    
+    let lastkey=localStorage.getItem("key").split(",");
+    let lastname =localStorage.getItem("correokey").split(",");
+    let contraseñas=[];
+    let correousuarios=[];
+
+    /*     traer elementos del los correos del localstronge formulario y 
+    los convierte en una lista y se crean dos listas vacias */  
+    myobjeto2.id=lastname.length; 
+    
+    // le asigna un id unico al nuevo elemento
+
+    
+    for (let k = 0; k < lastname.length; k++) {
+        correousuarios.push(lastname[k]);
+        contraseñas.push(lastkey[k]);   
+    }
+    correousuarios.push(myobjeto2.datos[0].correo);
+    contraseñas.push(myobjeto2.datos[0].contraseña);
+    
+    localStorage.setItem("correokey", correousuarios);
+    localStorage.setItem("key", contraseñas);
+    color="success"
+    mensajealert="Datos registrados exitosamente, ¡MUCHAS GRACIAS!";
+    alertUser(mensajealert,color);
+
+}
+
+
 
