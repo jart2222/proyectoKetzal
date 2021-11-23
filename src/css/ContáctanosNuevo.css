@@ -1,0 +1,49 @@
+
+#container{
+  
+    align-items: center;
+    margin-top: 100px;
+    color:#623307;
+    font-size:larger;  
+    margin-bottom: 2%;
+  
+  }
+  
+  #img{
+    margin-left: 100px;
+    margin-top: 10px;
+    height: 500px;
+  }
+  
+  #nombre{
+    background-color: #7EA567;
+  }
+  
+  #correo{
+  background-color: #7EA567;
+  }
+  
+  #telefono{
+    background-color: #7EA567;
+  }
+  
+  #asunto{
+    background-color: #7EA567;
+  }
+  #mensaje{
+    background-color: #7EA567;
+  }
+  
+  #boton{
+    background-color: #006E59;
+    margin-left: 300px;
+    text-align: center;
+  }
+  #formulario{
+    padding: 5%;
+    
+  }
+  
+  
+  
+    
