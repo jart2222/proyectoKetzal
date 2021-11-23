@@ -1,171 +1,48 @@
 const anclaHeader=document.getElementById("Head");
 const anclaFooter=document.getElementById("footer");
-let HEAD = `
-    <nav id="menu" class="navbar navbar-expand-lg navbar-light">
-        <div class="navbar-brand">
-            <a href="../index.html">
-                <img src="../src/images/logo.png" alt="logo" />
-            </a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+let head = `
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item nav-link"><a href="../index.html">Inicio</a></li>
-                <li class="nav-item nav-link"><a href="../pages/productos.html">Productos</a></li>
-                <li class="nav-item nav-link"><a href="../pages/contacto.html">Contacto</a></li>
-                <li class="nav-item nav-link"><a href="../pages/acerca.html">Acerca de</a></li>
-                <li class="nav-item nav-link" id="pagDesarrollo"></li>
-                <li class="nav-item nav-link"><a href="../pages/login.html"><img src="../src/images/userIcon.png" alt="usuario" /></a></li>
-            </ul>
+        </button><!--Icono desplegable-->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center moveText">
+                <li id="moveText1" class="nav-item">
+                    <a class="nav-link" href="#">INICIO</a>
+                </li>
+                <li id="moveText2" class="nav-item">
+                    <a class="nav-link" href="#">PRODUCTOS</a>
+                </li>
+                <li id="logoNav" class="navbar-item d-lg-block d-none" href="#">
+                    <img src="../src/images/logo.svg">
+                </li><!--Logo navbar--> 
+                <li id="moveText3" class="nav-item">
+                    <a class="nav-link" href="#">CONTÁCTANOS</a>
+                </li>
+                <li id="moveText4" class="nav-item">
+                    <a class="nav-link" href="#">ACERCA&nbsp;DE</a>
+                </li>
+                <li id="moveText5" class="nav-item">
+                    <a class="nav-link" href="#"><i class="far fa-user"></i></a>
+                </li>
+            </ul><!--Items navbar-->
         </div>
-    </nav>
-    <!--menu-->
+    </div>
+    </nav><!--Menú navbar-->
 `
-let FOOT = `
-<section class="mt-3 container-fluid row justify-content-around">
-    <div id="menu_footer" class="casilla col-3 d-none d-md-inline-block d-lg-inline-block">
-        <a class="btn letrero">
-            Menú
-        </a>
-        <div class="mt-3 menuFooter">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-                <li><a href="../pages/acerca.html">Acerca de</a></li>                
-            </ul>
-        </div>
-    </div>
-    <!--Items-->
-    <div id="contactanos" class="casilla col-3 d-none d-md-inline-block d-lg-inline-block">
-        <a class="btn letrero">
-            Contáctanos
-        </a>
-        <div id="contactanosFooter">
-            <div id="redes">
-                <div class="icono">
-                    <a href="https://www.facebook.com/profile.php?id=100074260975975">
-                        <img src="../src/images/facebookIcon.png" alt="facebook" />
-                    </a>
-                    <p class="overlay"><a href="https://www.facebook.com/profile.php?id=100074260975975">facebook.com/Ketzal_cafeteria</a></p>
-                </div>
-                <!--Facebook-->
-                <div class="icono">
-                    <a href="https://twitter.com/CafeteriaKetzal">
-                        <img src="../src/images/twitterIcon.png" alt="twitter" />
-                    </a>
-                    <p class="overlay"><a href="https://twitter.com/CafeteriaKetzal">@CafeteriaKetzal</a></p>
-                </div>
-                <!--twitter-->
-                <div class="icono">
-                    <a href="https://www.instagram.com/ketzal_cafeteria/">
-                        <img src="../src/images/instagramIcon.png" alt="instagram" />
-                    </a>
-                    <p class="overlay"><a href="https://www.instagram.com/ketzal_cafeteria/">instagram.com/ketzal_cafeteria</a></p>
-                </div>
-                <!--instagram-->
-                <div class="icono">
-                    <a href="#">
-                        <img src="../src/images/whatsappIcon.png" alt="whatsapp" />
-                    </a>
-                    <p class="overlay">+52&nbsp;55&nbsp;22&nbsp;33&nbsp;44&nbsp;11</p>
-                </div>
-                <!--whatsapp-->
-            </div>
-            <!--Redes-->
-        </div>
-        <!--Collapse redes-->
-    </div>
-    <!--Contactanos-->
-    <!--Inicia acordion footer-->
-    <div class="accordion mt-3 d-block d-md-none d-lg-none" id="accordionFooter">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="menuAccordion">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Menú
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="menuAccordion"
-                data-bs-parent="#accordionFooter">
-                <div class="accordion-body">
-                    <div class="mt-3 menuFooter">
-                        <ul>
-                            <li><a href="../index.html">Inicio</a></li>
-                            <li><a href="../pages/productos.html">Productos</a></li>
-                            <li><a href="../pages/contacto.html">Contacto</a></li>
-                            <li><a href="../pages/acerca.html">Acerca de</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="contactoAccordion">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Contáctanos
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="contactoAccordion"
-                data-bs-parent="#accordionFooter">
-                <div class="accordion-body">
-                    <div id="contactanosFooter">
-                        <div id="redes">
-                            <div class="iconoAccordion">
-                                <a href="https://www.facebook.com/profile.php?id=100074260975975">
-                                    <img src="../src/images/facebookIcon.png" alt="facebook" />
-                                </a>
-
-                                <p class="overlayAccordion"><a href="#">facebook.com/Ketzal_cafeteria</a></p>
-                            </div>
-                            <!--Facebook-->
-
-                            <div class="iconoAccordion">
-                                <a href="https://twitter.com/CafeteriaKetzal">
-                                    <img src="../src/images/twitterIcon.png" alt="twitter" />
-                                </a>
-
-                                <p class="overlayAccordion"><a href="#">@CafeteriaKetzal</a></p>
-                            </div>
-                            <!--twitter-->
-
-                            <div class="iconoAccordion">
-                                <a href="https://www.instagram.com/ketzal_cafeteria/">
-                                    <img src="../src/images/instagramIcon.png" alt="instagram" />
-                                </a>
-
-                                <p class="overlayAccordion"><a href="#">instagram.com/ketzal_cafeteria</a></p>
-                            </div>
-                            <!--instagram-->
-
-                            <div class="iconoAccordion">
-                                <a href="#">
-                                    <img src="../src/images/whatsappIcon.png" alt="whatsapp" />
-                                </a>
-
-                                <p class="overlayAccordion">+52&nbsp;55&nbsp;22&nbsp;33&nbsp;44&nbsp;11</p>
-                            </div>
-                            <!--whatsapp-->
-                        </div>
-                        <!--Redes-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Termina acordion footer-->
-</section>
-<!--Contenedor footer-->
-<section id="copyright" class="container-fluid">
-    <p>Esta web fue creada por el Equipo 2, Cohorte 6 de Generation&copy, 2021</p>
-</section>
+let foot = `
+    <ul class="redes">
+    <li><a href="#" alt="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="#" alt="Instagram"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="#" alt="Twitter"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#" alt="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+    </ul><!--Redes footer-->
 `
-anclaHeader.innerHTML=HEAD;
-anclaFooter.innerHTML=FOOT;
+anclaHeader.innerHTML=head;
+anclaFooter.innerHTML=foot;
 if(localStorage.getItem("usuarioActivo")!=null) {//esta logeado el usuario dueño
     let usuarioActivo=JSON.parse(localStorage.getItem("usuarioActivo"));
     if(usuarioActivo=="admin@gmail.com"){
@@ -173,4 +50,99 @@ if(localStorage.getItem("usuarioActivo")!=null) {//esta logeado el usuario dueñ
         let botonPagDesarrollo=`<a href="../pages/PaginaDesarrollador.html" >Agregar Productos</a>`;
         anclaPagDesarrollador.innerHTML=botonPagDesarrollo;
     }
+}
+iniciarProductos();
+
+function iniciarProductos(){
+    //productos por default
+    if(localStorage.getItem("catalogo")==null) {//si no existe
+        let totalProductos=crearProductos();
+        let totalProductosJson=JSON.stringify(totalProductos);
+        localStorage.setItem("catalogo", totalProductosJson);
+    }
+}
+function crearProductos(){
+    let totalProductos = {};
+    totalProductos[1] = {
+        nombre: "Café Honduras",
+        precio: 102,
+        id: 1,
+        cantidad: 180,
+        imagen: "../src/images/Json/cafeHonduras.jpeg",
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+         
+    };
+    totalProductos[2] = {
+        nombre: "Café Borundi",
+        precio: 150,
+        id: 2,
+        cantidad: 200,
+        imagen: "../src/images/Json/cafeBorundi.jpeg",
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+         
+    };
+    totalProductos[3] = {
+        nombre: "Café Guatemala",
+        precio: 135,
+        id: 3,
+        cantidad: 100,
+        imagen: "../src/images/Json/cafeGuatemala.jpeg",
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+         
+    };
+    totalProductos[4] = {
+        nombre: "Café Indonesia",
+        precio: 163,
+        id: 4,
+        cantidad: 110,
+        imagen: "../src/images/Json/cafeIndonesia.jpeg",
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+         
+    };
+    totalProductos[5] = {
+        nombre: "Café Mimba",
+        precio: 216,
+        id: 5,
+        cantidad: 210,
+        imagen: "../src/images/Json/cafeMimba.jpeg",
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+         
+    };
+    totalProductos[6] = {
+        nombre: "Café Mujeres",
+        precio: 394,
+        id: 6,
+        cantidad: 360,
+        imagen: "../src/images/Json/cafeMujeres.jpeg",
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+         
+    };
+    totalProductos[7] = {
+        nombre: "Café Perú",
+        precio: 498,
+        id: 7,
+        cantidad: 400,
+        imagen: "../src/images/Json/cafePeru.jpeg",
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+         
+    };
+    totalProductos[8] = {
+        nombre: "Café Pétalo",
+        precio: 93,
+        id: 8,
+        cantidad: 87,
+        imagen: "../src/images/Json/cafePetalo.jpeg",
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+         
+    };
+    totalProductos[9] = {
+        nombre: "Café Tziscao",
+        precio: 135,
+        id: 9,
+        cantidad: 270,
+        imagen: "../src/images/Json/cafeTziscao.jpeg",
+        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+         
+    };
+    return(totalProductos);
 }
