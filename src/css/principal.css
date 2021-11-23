@@ -3,19 +3,19 @@
 }
 
 #section1{
-    background-image: url(../images/CafeFondoS1.jpeg);
+    background-color: #4d2c0d;
     background-size: cover;
     background-position: center;
     
-    padding: 1vh;
-    gap: 2vh;
+  /*   padding: 1vh; */
+    
 
 }
 .seccion1-carru{
-    margin-top: 7vh;
+    /* margin-top: %; */
     text-align: center;
-    background-color: white;
-    height: 10%;
+    /* background-color: white; */
+    /* height: 1%; */
     padding: 3vh;
 }
 
@@ -26,7 +26,7 @@
     padding: 3vh;
 }
 .seccion1-imagen-carru{
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 .title{
     text-align: center;
@@ -36,12 +36,7 @@
 }
 
 .seccion2-Prom{
-    gap: 1vh;
-    text-align: center;
-    margin-top: 2vh;
-}
-.seccion3-Fav{
-    gap: 1vh;
+    
     text-align: center;
     margin-top: 2vh;
 }
