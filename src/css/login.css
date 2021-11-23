@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 body{
     font-family: 'Noto Sans', sans-serif;
-    color:#006E59;
     font-weight: bold;
     text-align: center;
     /* font-size: x-large; */
@@ -35,11 +34,18 @@ body{
     margin-bottom: 2%;  
 
 }
+.renglon{
+    margin-bottom: 10%;
+    pointer-events:none;
+}
+
+    
+
 
 
 
 .separacion{
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     pointer-events:none;
 }
 
@@ -58,6 +64,9 @@ body{
 
 }
 .titulos{
+    
+    font-size: x-large;
+    letter-spacing: 4px;
     pointer-events:none;
     font-weight: bolder;
     color: #006E59;
