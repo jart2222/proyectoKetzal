@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', e => {
                 precio: input_precio,
                 id: input_idProducto,
                 cantidad: input_cantidad,
-                imagen: "../src/images/Json/"+input_imagen+".jpeg",
+                imagen: "../src/images/productos/"+input_imagen+".jpeg",
                 descripcion: input_descripcion
             };
             let totalProductosJson=JSON.stringify(totalProductos);
