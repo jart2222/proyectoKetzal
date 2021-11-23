@@ -15,7 +15,7 @@ class Miembros {
                     </div> <!--  termina imagen card -->
                     <section class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">${this.name}</h5>
+                            <h5 class="card-title titulocard">${this.name}</h5>
                             <p class="card-text textocard">${this.resumen}</p>
                             <nav class="container">
                                 <div class="row">
