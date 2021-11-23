@@ -1,0 +1,26 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+    color: #623307;
+    
+}
+.imagen{
+ 
+    background-image: url(../images/administrador.jpg);
+    background-size: cover;
+    padding: 15%;
+
+}
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.botones{  
+    display: flex;
+    justify-content: center;
+   
+}
+.btn{
+    background-color: #006E59;
+    color: white;
+}
