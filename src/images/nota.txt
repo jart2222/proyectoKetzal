@@ -1,2 +1,0 @@
-En esta parte ira todo lo referente a la pagina de inicio
-todas las demas carpetas conforman las demas paginas del sitio web
