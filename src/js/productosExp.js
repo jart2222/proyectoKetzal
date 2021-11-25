@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', e => {
                         </a>
                         <h2>
                             ${totalProductos[idProducto].nombre}
-                            <small>$${totalProductos[idProducto].precio} / ${totalProductos[idProducto].cantidad} gr.</small>
+                            <small>$${totalProductos[idProducto].precio} MXN / ${totalProductos[idProducto].cantidad} gr.</small>
                         </h2>
                     </div>
                     <div class="card-flap flap1">
