@@ -15,7 +15,7 @@
 
 .container-fondo-txt{
     
-    background-image: url(../images/);
+    background-image: url(../images/color3.png);
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,6 +78,7 @@
     align-items: center;
     overflow: hidden;
     transition:0.9s all;
+    padding-top: 5%;
    
    
 }
@@ -99,18 +100,6 @@
     background-color: rgba(126, 165, 103, 1);;
     color: #FAFAFA;
     margin-top: 5%;
-}
-.imgProducto1{
-    padding-top: 7%;
-    
-}
-.imgProducto2{
-    padding-top: 7%;
-    padding-top: 0%;
-}
-.imgProducto3{
-    padding-top: 7%;
-    padding-top: 0%;
 }
 
 

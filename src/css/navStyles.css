@@ -3,13 +3,7 @@
 /*
     ESTILOS NAVBAR
 */
-.navbar{
-    background-image: url(../images/fondoNavBar11.jpg);
-    background-repeat: no-repeat;
-    background-position:100%;
-    background-size: cover;
-    
-}
+
 
 nav {
     position: absolute;
