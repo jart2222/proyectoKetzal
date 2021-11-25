@@ -85,7 +85,14 @@ function validar5(){
     document.getElementById("alertanombre").innerHTML=""; /* reinicia el div del mensaje*/
     let input_contrasena = document.getElementById("contraseñas").value;
     let input_contrasena2 = document.getElementById("contraseñas2").value;
-    if (input_contrasena == input_contrasena2) {
+    if(input_contrasena2<8 ){
+        mensajealert="Por favor acomplete su contraseña";
+        color="warning"
+        alertUser(mensajealert, color);
+        return true;
+    }
+
+    if (input_contrasena != input_contrasena2) {
         mensajealert="No son la misma contraseña";
         color="warning"
         alertUser(mensajealert,color);
