@@ -57,6 +57,7 @@
     overflow: hidden;
     position: relative;
     margin: 1%;
+    
 }/*Caja de imagenes */
 .box img{
     width: 100%;
@@ -64,12 +65,14 @@
     object-fit: cover;
 }
 .box .hover{
+    /* padding-top: 50%; */
+    
     width:0%;
     height: 125vh; /*tamaño de efectos de imagenes */
     background-color: rgb(56, 53, 53,0.568);/*color de efecto de imagenes*/
     position: absolute;
     top: 0;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -77,16 +80,24 @@
 }
 .hover btn{
     
+    
     color:#FAFAFA;
     /* text-shadow: 1px,1px,1px black; */
     font-size: 2.5em;
 }
 .box:hover .hover{
+    padding-top: 30%;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+    
     width: 100%;
 }
-
-
-
+.btn{
+    background-color: rgba(126, 165, 103, 1);;
+    color: #FAFAFA;
+    
+}
 
 
 
