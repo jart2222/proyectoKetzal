@@ -45,7 +45,7 @@ function leer(){
          }
  
          if(correoj==lastname[i] && contraseñaj==lastkey[i]){/* solo se ejecuta para los usuarios*/
-             location.href ="../pages/productos.html"
+             location.href ="../pages/productosExp.html"
              break;
          }
          
