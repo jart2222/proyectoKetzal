@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-body{
+.textogeneral{
     font-family: 'Noto Sans', sans-serif;
     color: #623307;
     margin: 0%;
@@ -20,7 +20,11 @@ body{
     color: #623307;
 }
 .textocentral{
+    margin: 0%;
+    font-style: normal;
+    font-weight: bold;
     margin-top: 0%;
+    color: #623307;
     margin-bottom: 10%;
     padding: 0% 2.5%;
     text-align: center;
@@ -34,8 +38,19 @@ body{
 .imagencentral{
     padding-bottom: 10%;
 }
+.titulocard{
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 2rem;
+    color: #623307;
+    font-weight: bold;
+
+}
 .textocard{
     font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
     line-height: 2rem;
+    color: #623307;
+    margin: 0%;
+    font-weight: bold;
 
 }

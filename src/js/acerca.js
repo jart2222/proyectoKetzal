@@ -7,63 +7,49 @@ class Miembros {
       this.linkedin=linkedin;
     }
     agregarcard(){
-        this.card=`<article class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="${this.imegen}" class="img-fluid rounded-start" alt="...">
-                        </div> <!--  termina imagen card -->
-                        <section class="col-md-8">
-                            <div class="card-body">
-                            <h5 class="card-title">${this.name}</h5>
+        this.card=`
+            <article class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="${this.imegen}" class="img-fluid rounded-start" alt="...">
+                    </div> <!--  termina imagen card -->
+                    <section class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title titulocard">${this.name}</h5>
                             <p class="card-text textocard">${this.resumen}</p>
-                            <!-- termina texto -->
                             <nav class="container">
                                 <div class="row">
-                                <div class="col-2 ">
-                                    <a role="button" href="${this.github}" class="btn btn-outline">
-                                        <i class="bi bi-github iconos"></i> 
-                                    </a>
-                                </div>
-                        
-                                <div class="col-2">
-                                    <a role="button" href="${this.linkedin}" class="btn btn-outline">
-                                        <i class="bi bi-linkedin iconos"></i>
-                                    </a>
-                                    
-                                </div>
-                                
+                                    <div class="col-2 ">
+                                        <a role="button" href="${this.github}" class="btn btn-outline">
+                                            <i class="bi bi-github iconos"></i> 
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <a role="button" href="${this.linkedin}" class="btn btn-outline">
+                                            <i class="bi bi-linkedin iconos"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </nav> <!-- seccion de iconos -->
-                        
-                        
-                            </div>
-                        </section> <!-- termina descripcion card -->
                         </div>
-                    </article> <!-- termina card -->`
+                    </section> <!-- termina descripcion card -->
+                </div>
+            </article> <!-- termina card -->
+        `
     }
-
-
-
-  }
+}
 
  /*  primer miembro */
 
 let Armando= new Miembros("Jose Armando Roman Torres","../src/images/Armando.png","This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
                         ,"https://github.com/jart2222","https://www.linkedin.com/in/jos%C3%A9-armando-rom%C3%A1n-torres-b3aa78221/");
-
 Armando.agregarcard()
-
 const card1 =document.getElementById("card1");
-
 card1.innerHTML = Armando.card
-
  /* termina  primer miembro */
-
  /* segundo miembro */
-
 let Daisy=new Miembros("Daisy Sarahí Matus Morales","../src/images/Daisy.jpg","This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
                     ,"https://github.com/dmatmo" , "https://www.linkedin.com/in/daisy-matus-morales-190042222/")
-
 Daisy.agregarcard()
 
 const card2 =document.getElementById("card2");

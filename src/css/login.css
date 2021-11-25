@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 body{
     font-family: 'Noto Sans', sans-serif;
-    font-weight: bold;
     text-align: center;
     /* font-size: x-large; */
 
@@ -14,12 +13,14 @@ body{
 }
 
 .formulario1{
+    font-weight: bold;
     background-color:white;
    
 }
 
 
 .formulario2{
+    font-weight: bold;
     background-color:white;
 
 }
@@ -28,6 +29,7 @@ body{
 }
 
 .campos{
+    font-weight: bold;
     text-align: left;
     color:#623307;
     font-size:larger;  
@@ -35,6 +37,7 @@ body{
 
 }
 .renglon{
+    font-weight: bold;
     margin-bottom: 10%;
     pointer-events:none;
 }

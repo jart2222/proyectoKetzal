@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+body{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: left;
+    /* font-size: x-large; */
+
+
+}
+
+.botones{
+    text-align: right;
+    font-weight: bold;
+    
+}
+.boton{
+    background-color: #006E59;
+    font-weight: bold;
+    border: 0px;
+    width: 20%;
+}
+.campos{
+    color: #623307;
+    font-weight: bold;
+    margin-bottom: 8%;
+}
+
+.form-control{
+    font-weight: bold;
+    background-color:#7ea567ad;
+
+}
+label{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+

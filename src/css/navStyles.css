@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /*
@@ -97,4 +98,22 @@ nav {
 
 #footer ul li a:hover {
     transform: scale(1.2, 1.2) !important;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+.navancla{
+    font-family: 'Noto Sans', sans-serif;
+    color: #623307;
+}
+.navancla i{
+    color: #623307;
+    font-size: 1.2em ;
+
+}
+
+.verde{
+    background-color: #006E59;
+}
+.verde i{
+    color: white;
+>>>>>>> main
 }
