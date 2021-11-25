@@ -40,12 +40,12 @@ function leer(){
             let usuarioAceptado=JSON.stringify("admin@gmail.com");
             localStorage.removeItem("usuarioActivo");
             localStorage.setItem("usuarioActivo",usuarioAceptado);
-            location.href ="../../pages/PaginaDesarrollador.html"
+            location.href ="../pages/administrador.html"
             break;
          }
  
          if(correoj==lastname[i] && contraseñaj==lastkey[i]){/* solo se ejecuta para los usuarios*/
-             location.href ="../../pages/productos.html"
+             location.href ="../pages/productosExp.html"
              break;
          }
          

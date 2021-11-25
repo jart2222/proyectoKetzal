@@ -15,10 +15,10 @@ let head = `
                     <a class="nav-link" href="../index.html">INICIO</a>
                 </li>
                 <li id="moveText2" class="nav-item">
-                    <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                    <a class="nav-link" href="./productosExp.html">PRODUCTOS</a>
                 </li>
                 <li id="logoNav" class="navbar-item d-lg-block d-none" href="#">
-                    <img src="../src/images/logo.svg">
+                <a class="nav-link" href="../index.html"><img src="../src/images/logo.svg"></a>
                 </li><!--Logo navbar--> 
                 <li id="moveText3" class="nav-item">
                     <a class="nav-link" href="./contáctanos.html">CONTÁCTANOS</a>
@@ -73,8 +73,7 @@ let foot = `
 
 anclaHeader.innerHTML = head;
 anclaFooter.innerHTML = foot;
-
-
+iniciarProductos();
 if(localStorage.getItem("usuarioActivo")!=null) {//esta logeado el usuario dueño
     let usuarioActivo=JSON.parse(localStorage.getItem("usuarioActivo"));
     if(usuarioActivo=="admin@gmail.com"){
@@ -83,6 +82,7 @@ if(localStorage.getItem("usuarioActivo")!=null) {//esta logeado el usuario dueñ
         anclaPagDesarrollador.innerHTML=botonPagDesarrollo;
     }
 }
+
     
 function iniciarProductos(){
     //productos por default
@@ -96,56 +96,56 @@ function crearProductos(){
     let totalProductos = {};
     totalProductos[1] = {
         nombre: "Café Honduras",
-        precio: 102,
+        precio: 600,
         id: 1,
         cantidad: 180,
         imagen: "../src/images/productos/cafeHonduras.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café 100% de café arábica, con una producción ecológicamente sostenible. Suelen ser dulces, achocolatados, con cuerpo redondo, acidez delicada y postgusto sostenido. Perfecto para esos días de descanso."
          
     };
     totalProductos[2] = {
         nombre: "Café Borundi",
-        precio: 150,
+        precio: 550,
         id: 2,
         cantidad: 200,
         imagen: "../src/images/productos/cafeBorundi.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café de grano cosechado a mano y secado al sol en parihuelas elevadas. Se pueden identificar notas de frutas, flores y miel, acompañadas de consistencia, equilibrio y un cuerpo completo. Perfecto para iniciar tus mañanas."
          
     };
     totalProductos[3] = {
         nombre: "Café Guatemala",
-        precio: 135,
+        precio: 876,
         id: 3,
-        cantidad: 100,
+        cantidad: 500,
         imagen: "../src/images/productos/cafeGuatemala.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Este preparado gourmet es una mezcla arábiga aromática, El grano es cosechado a la sombra. Es delicioso, con pronunciada acidez cítrica y mucho cuerpo. Perfecto para compartir con amigos."
          
     };
     totalProductos[4] = {
         nombre: "Café Indonesia",
-        precio: 163,
+        precio: 490,
         id: 4,
-        cantidad: 110,
+        cantidad: 300,
         imagen: "../src/images/productos/cafeIndonesia.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Está considerado como uno de los mejores del mundo, es un café Arábica procesado húmedo. Es bastante dulce y de baja acidez, de cuerpo medio y aroma complejo a tierra. Ideal para esos días especiales."
          
     };
     totalProductos[5] = {
         nombre: "Café Mimba",
-        precio: 216,
+        precio: 637,
         id: 5,
-        cantidad: 210,
+        cantidad: 470,
         imagen: "../src/images/productos/cafeMimba.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café liofilizado hecho con granos cosechados a mano a nivel del mar. ​​Es apreciado por su dulce fragancia, acidez cítrica, sabores dulces y un cuerpo cremoso que la hacen muy agradable. Lo mejor para los días de trabajo."
          
     };
     totalProductos[6] = {
         nombre: "Café Mujeres",
-        precio: 394,
+        precio: 494,
         id: 6,
         cantidad: 360,
         imagen: "../src/images/productos/cafeMujeres.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café en grano que se cultiva en laderas empinadas, bajo la sombra de árboles y plantas que permiten una maduración más lenta. Es de acidez media y mucho cuerpo, con notas a chocolate y avellana. El mejor para compartir con esa persona especial."
          
     };
     totalProductos[7] = {
@@ -154,25 +154,25 @@ function crearProductos(){
         id: 7,
         cantidad: 400,
         imagen: "../src/images/productos/cafePeru.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café Arábica, de las mejores cosechas debido a la privilegiada ubicación de Perú. Caracterizados por su cuerpo y notas herbáceas, pero con más dulzor. Delicioso para compartir en familia."
          
     };
     totalProductos[8] = {
         nombre: "Café Pétalo",
-        precio: 93,
+        precio: 979,
         id: 8,
-        cantidad: 87,
+        cantidad: 550,
         imagen: "../src/images/productos/cafePetalo.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café robusta, cosechado 100% por familias de las mejores regiones de Perú. Agradable sabor a cítricos, albaricoques y caramelo y acidez tartárica. Lo mejor para esos momentos difíciles."
          
     };
     totalProductos[9] = {
         nombre: "Café Tziscao",
-        precio: 135,
+        precio: 725,
         id: 9,
-        cantidad: 270,
+        cantidad: 320,
         imagen: "../src/images/productos/cafeTziscao.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café granos 100% arábica y orgánico, el tostado del cafés está elaborado en pequeños lotes, con el mayor de los cuidados, con sabor achocolatado y tonos a almendras tostadas, con un aroma y cuerpo intenso. Tu mejor aliado para esos viajes largos."
          
     };
     return(totalProductos);
