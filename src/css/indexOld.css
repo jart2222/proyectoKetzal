@@ -5,21 +5,26 @@
     font-family: Noto Sans;
 }
 
-#presentacion {
-    position: relative;
-    height: 100vh;
-    background-image: url(../images/fondoPrincipal.jpg);
+.container-fondo{
+
+    background-image: url(../images/fondoPrincipal.jpg); height:465px;
+    background-position:100%;
     background-size: cover;
     background-position: center;
 }
 
-#txtPresentacion {
-    position: absolute;
-    bottom: 0;
+.container-fondo-txt{
+    
+    background-image: url(../images/color3.png);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: relative;
     text-align: center;
     font-family: Noto Sans;
     font-size: 36px;
     letter-spacing: 3px;
+    height: 250px ;
     color: #623307;
 }
 
@@ -36,61 +41,52 @@
     
 }
 /*Efectos de imagenes de pagina principal*/
-#prueba {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: 600px;
+.prueba{
+    width: 100%;
+    height: 100vh;
     background-color: ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }/*Contenedor de imagenes de pagina principal*/
 
 .box{
-    padding: 0 !important;
-    margin-top: 10px;
-    height: 100%;
+    width: 100%;
+    height: 80vh;/*tamaño de imagenes */
     text-align: center;
-    position: relative;
     overflow: hidden;
-    
+    position: relative;
+    margin: 1%;
 }/*Caja de imagenes */
-
 .box img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-.slide-box{
-    width: 100%;
-    height: 100%; /*tamaño de efectos de imagenes */
+.box .hover{
+    width:0%;
+    height: 125vh; /*tamaño de efectos de imagenes */
     background-color: rgb(56, 53, 53,0.568);/*color de efecto de imagenes*/
     position: absolute;
     top: 0;
-    transform: translateX(-120%);
+    display: flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
     transition:0.4s all;
 }
-
-.imgProducto {
-    position: relative;
-    top: 0;
-    height: 80%;
-}
-
-.slide-box .btn{    
-    margin-top: 20px;
-    background-color: #7EA567;
+.hover btn{
+    
     color:#FAFAFA;
-    font-size: 15px;
-}    
-
-.box:hover .slide-box{
-    transform: translateX(0);
+    /* text-shadow: 1px,1px,1px black; */
+    font-size: 2.5em;
+}
+.box:hover .hover{
+    width: 100%;
 }
 
-.btn{
 
-}
+
 
 
 

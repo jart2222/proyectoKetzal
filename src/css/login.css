@@ -7,7 +7,7 @@ body{
 
 }
 
-.ford nav:first-child:hover{
+.ford div:first-child:hover{
     background-color:rgba(126, 165, 103, 0.096);
     margin: 1px solid black;
 }
