@@ -15,7 +15,7 @@ let head = `
                     <a class="nav-link" href="../index.html">INICIO</a>
                 </li>
                 <li id="moveText2" class="nav-item">
-                    <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                    <a class="nav-link" href="./productosExp.html">PRODUCTOS</a>
                 </li>
                 <li id="logoNav" class="navbar-item d-lg-block d-none" href="#">
                     <img src="../src/images/logo.svg">
