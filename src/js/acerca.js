@@ -17,20 +17,20 @@ class Miembros {
                         <div class="card-body">
                             <h5 class="card-title titulocard">${this.name}</h5>
                             <p class="card-text textocard">${this.resumen}</p>
-                            <nav class="container">
-                                <div class="row">
-                                    <div class="col-2 ">
+                            <div class="container">
+                                <div class="col-6 row">
+                                    <div class="col-2 m-2">
                                         <a role="button" href="${this.github}" class="btn btn-outline">
                                             <i class="bi bi-github iconos"></i> 
                                         </a>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-2 m-2">
                                         <a role="button" href="${this.linkedin}" class="btn btn-outline">
                                             <i class="bi bi-linkedin iconos"></i>
                                         </a>
                                     </div>
                                 </div>
-                            </nav> <!-- seccion de iconos -->
+                            </div> <!-- seccion de iconos -->
                         </div>
                     </section> <!-- termina descripcion card -->
                 </div>

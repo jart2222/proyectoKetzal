@@ -8,6 +8,7 @@ body{
 
 }
 .titulo{
+    transform: translateY(30%);
     text-align: center; 
 }
 
