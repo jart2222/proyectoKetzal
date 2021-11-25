@@ -1,3 +1,11 @@
+function alertnoregistrado(mensajealert,color){
+    let alertnoregistrado=document.getElementById("alertausuario");
+    alertnoregistrado.innerHTML=`<div class="alert alert-colorinput ${color} alert-dismissible fade show" role="alert">
+                                <strong>${mensajealert} </strong> 
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>`
+}
+
 function contraseñausuario(){
     var contraseñas=[];
     var correousuarios=[];
@@ -48,7 +56,16 @@ function leer(){
              location.href ="../pages/productosExp.html"
              break;
          }
+        
+             
+         } //cierra for
+        mensajealert="Usuario o contraseña incorrecto ";
+        color="warning"
+        alertnoregistrado(mensajealert, color);
+        
          
+
+
      }
         
-}
+

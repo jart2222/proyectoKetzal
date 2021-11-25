@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', e => {
                         </h2>
                     </div>
                     <div class="card-flap flap1">
-                        <div class="card-description">
+                        <div class="card-description" style="text-align: justify;">
                             ${totalProductos[idProducto].descripcion}
                         </div>
                         <div class="card-flap flap2">

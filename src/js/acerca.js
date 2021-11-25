@@ -86,7 +86,7 @@ card4.innerHTML = Saul.card
 /* Quinto  miembro */
 
 let Fernando=new Miembros("Fernando Melchor","../src/images/LuisFer.jpg","Equipo Front-End. Licenciado en Sociología"
-                    ,"https://github.com/luisfernandoMH" , "https://www.linkedin.com/in/luis-fernando-melchor-hernandez-739755180/")
+                    ,"https://github.com/luisfernandoMH" , "https://www.linkedin.com/in/luis-fernando-melchor-hern%C3%A1ndez-739755180")
 
 Fernando.agregarcard()
 
@@ -98,7 +98,7 @@ card5.innerHTML = Fernando.card
 /* Sexto  miembro */
 
 let Rodrigo=new Miembros("Rodrigo Torres","../src/images/Rodrigo.jpg","Equipo Front-End. Licenciado en Urbanismo."
-                    ,"https://github.com/iRoooooo" , "https://www.linkedin.com/in/rod-torres-730aa5221")
+                    ,"https://github.com/iRoooooo" , "https://www.linkedin.com/in/rodrigo-torres-730aa5221")
 
 Rodrigo.agregarcard()
 
