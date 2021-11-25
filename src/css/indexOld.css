@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Noto Sans;
+}
+
+#presentacion {
+    position: relative;
+    height: 100vh;
+    background-image: url(../images/fondoPrincipal.jpg);
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-size: 100% 100%;
+    background-position:bottom;
+}
+
+#txtPresentacion {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 100%;
+    letter-spacing: 3px;
+    color: #623307;
+}
+
+.txtNuestrosProductos{
+    padding: 2% ;
+    margin-top: 5% ;
+    background-color: rgba(126, 165, 103, 1);
+    font-family: Noto Sans;
+    font-size: 10vh;
+    text-Align: Center;
+    letter-spacing: 5px;
+    color: #FAFAFA;
+    
+}
+/*Efectos de imagenes de pagina principal*/
+#prueba {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}/*Contenedor de imagenes de pagina principal*/
+
+.box{
+    padding: 0 !important;
+    margin-top: 10px;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+}/*Caja de imagenes */
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-box{
+    width: 100%;
+    height: 100%; /*tamaño de efectos de imagenes */
+    background-color: rgb(56, 53, 53,0.568);/*color de efecto de imagenes*/
+    position: absolute;
+    top: 0;
+    transform: translateX(-120%);
+    justify-content: center;
+    overflow: hidden;
+    transition:0.4s all;
+}
+
+.imgProducto {
+    position: relative;
+    top: 0;
+    height: 80%;
+}
+
+.slide-box .btn{    
+    margin-top: 20px;
+    background-color: #7EA567;
+    color:#FAFAFA;
+    font-size: 15px;
+}    
+
+.box:hover .slide-box{
+    transform: translateX(0);
+}
+
+
+
+
+
+
+

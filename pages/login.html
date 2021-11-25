@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">   <link rel="stylesheet" href="./login.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="../src/css/navStyles.css">
     <link rel="stylesheet" href="../src/css/login.css">
 
 </head>
 <header id="menu"></header>
+
 <body onload="contraseñausuario()">
-    <section class="container">
+    <section class="container mt-4">
         <div class="row justify-content-center ford">
-            <nav class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 formulario1  ">
-                
-                <form > 
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 formulario1">
+                <form>
                     <h1 class="titulos">INICIAR SESIÓN</h1>
                     <div class="separacion">
                         <!--  separacion -->
                     </div>
-                    
 
-                    <div  class="campos col-11" >
-                        <label >Correo electrónico </label>
+
+                    <div class="campos col-11">
+                        <label>Correo electrónico </label>
                         <input type="email" id="correop" class="form-control colorinput">
                     </div> <!-- correo electronico campo-->
                     <div class="separacion">
@@ -33,75 +36,76 @@
                     </div>
 
                     <div class="campos col-11">
-                        <label >Contraseña </label>
-                        <input type="password" id="contraseñap" class="form-control colorinput" >
+                        <label>Contraseña </label>
+                        <input type="password" id="contraseñap" class="form-control colorinput">
                     </div> <!--  Contraseña campo -->
                     <div class="renglon">
                         <!--  separacion -->
-                    </div>                    
+                    </div>
                 </form>
-                <div class="botones col-11"> 
-                    <button type="submit" onclick="leer()" class="btn btn-success" >INICIAR SESIÓN</button>
-                </div><!--boton crear cuenta-->
-              
-                
-            </nav> <!-- primer formulario -->
-           
-            
-            
-            <nav class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 align-items-center formulario2">
+                <div class="botones col-11">
+                    <button type="submit" onclick="leer()" class="btn btn-success">INICIAR SESIÓN</button>
+                </div>
+                <!--boton crear cuenta-->
+
+            </div> <!-- primer formulario -->
+
+
+
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12 align-items-center formulario2">
                 <form>
-                     
+
                     <div id="alertanombre">
 
                     </div>
-                    
+
                     <h1 class="titulos">¿ERES NUEVO?</h1>
-                    
+
                     <div class="renglon">
                         <!--  separacion -->
-                    </div>  
+                    </div>
                     <div class="campos col-11">
                         <label for="formGroupExampleInput">Nombre *</label>
-                        <input type="text" id="nombreusuario1" onchange="validar1()" class="form-control colorinput" >
-                      </div>
+                        <input type="text" id="nombreusuario1" onchange="validar1()" class="form-control colorinput">
+                    </div>
                     <div class="campos col-11">
                         <label for="mail">Correo electrónico</label>
-                        <input type="email" id="mail"  onchange="validar2()" class="form-control colorinput">
-                        
+                        <input type="email" id="mail" onchange="validar2()" class="form-control colorinput">
+
                     </div>
                     <div class="campos col-11">
-                        <label >Contraseña *</label>
-                        <input type="password"  id="contraseñas" onchange="validar4()" class="form-control colorinput">
+                        <label>Contraseña *</label>
+                        <input type="password" id="contraseñas" onchange="validar4()" class="form-control colorinput">
                     </div>
                     <div class="campos col-11">
-                        <label >Repetir contraseña *</label>
-                        <input type="password" id= "contraseñas2" onchange="validar5()" class="form-control colorinput">
+                        <label>Repetir contraseña *</label>
+                        <input type="password" id="contraseñas2" onchange="validar5()" class="form-control colorinput">
                     </div>
 
                 </form>
                 <div class="botones col-11">
                     <button type="submit" onclick="crearjson()" class="btn btn-success">CREAR CUENTA</button>
-                  </div><!--boton crear cuenta-->
-              
-                  <div class="separacion">
+                </div>
+                <!--boton crear cuenta-->
+
+                <div class="separacion">
                     <!--  separacion -->
                 </div>
-            </nav> <!-- segundo formulario -->
+            </div> <!-- segundo formulario -->
+        </div>
+    </section> <!-- terminan formularios -->
+    <footer id="footer" class="container-fluid"></footer>
 
-
-
-
-
-        </div> 
-    </section>  <!-- terminan formularios -->
-    <footer id="foot" class="container-fluid"></footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
     <script src="../src/js/loginJS.js"></script>
     <script src="../src/js/registroJS.js"></script>
     <script src="../src/js/navbar.js"></script>
 
 </body>
+
 </html>
