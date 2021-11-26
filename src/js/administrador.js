@@ -80,7 +80,6 @@ document.addEventListener('DOMContentLoaded', e => {
             let totalProductosJson=JSON.stringify(totalProductos);
             localStorage.removeItem("catalogo");
             localStorage.setItem("catalogo", totalProductosJson);
-            alert("Producto "+totalProductos[input_idProducto].nombre+" agregado");
         }
         else{
             validar=0;
