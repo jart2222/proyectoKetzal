@@ -78,7 +78,8 @@
     align-items: center;
     overflow: hidden;
     transition:0.9s all;
-    padding-top: 11%;
+    padding-top: 5%;
+   
    
 }
 .hover btn{
@@ -100,7 +101,6 @@
     color: #FAFAFA;
     margin-top: 5%;
 }
-
 
 
 
