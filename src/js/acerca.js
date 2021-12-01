@@ -41,14 +41,14 @@ class Miembros {
 
  /*  primer miembro */
 
-let Armando= new Miembros("Jose Armando Roman Torres","../src/images/Armando.png","This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+let Armando= new Miembros("Armando Roman","../src/images/Armando.png","Equipo Back-End. Licenciado en Tecnología."
                         ,"https://github.com/jart2222","https://www.linkedin.com/in/jos%C3%A9-armando-rom%C3%A1n-torres-b3aa78221/");
 Armando.agregarcard()
 const card1 =document.getElementById("card1");
 card1.innerHTML = Armando.card
  /* termina  primer miembro */
  /* segundo miembro */
-let Daisy=new Miembros("Daisy Sarahí Matus Morales","../src/images/Daisy.jpg","This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+let Daisy=new Miembros("Daisy Matus","../src/images/Daisy.jpg","Equipo Front-End. Ingeniería en computación."
                     ,"https://github.com/dmatmo" , "https://www.linkedin.com/in/daisy-matus-morales-190042222/")
 Daisy.agregarcard()
 
@@ -60,7 +60,7 @@ card2.innerHTML = Daisy.card
 
 /* tercer miembro */
 
-let Oscar=new Miembros("Oscar Martínez Rufino","../src/images/Oscar.jpg","This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+let Oscar=new Miembros("Oscar Martínez","../src/images/Oscar.jpg","Equipo Front-End. Ingeniería en Software."
                     ,"https://github.com/OscarMtz1111" , "https://www.linkedin.com/in/oscarmtz1111/")
 
 Oscar.agregarcard()
@@ -73,7 +73,7 @@ card3.innerHTML = Oscar.card
 
 /* cuarto  miembro */
 
-let Saul=new Miembros("Pérez Elizondo Saúl Octavio","../src/images/Saul.jpg","This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+let Saul=new Miembros("Saúl Pérez","../src/images/Saul.jpg","Equipo Back-End. Licenciado en Tecnología."
                     ,"https://github.com/ElizOct98" , "https://www.linkedin.com/in/saul-octavio-perez-elizondo/")
 
 Saul.agregarcard()
@@ -85,8 +85,8 @@ card4.innerHTML = Saul.card
 
 /* Quinto  miembro */
 
-let Fernando=new Miembros("Luis Fernando Melchor","../src/images/LuisFer.jpg","This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
-                    ,"https://github.com/luisfernandoMH" , "https://www.linkedin.com/in/luis-fernando-melchor-hernandez-739755180/")
+let Fernando=new Miembros("Fernando Melchor","../src/images/LuisFer.jpg","Equipo Front-End. Licenciado en Sociología"
+                    ,"https://github.com/luisfernandoMH" , "https://www.linkedin.com/in/luis-fernando-melchor-hern%C3%A1ndez-739755180")
 
 Fernando.agregarcard()
 
@@ -97,8 +97,8 @@ card5.innerHTML = Fernando.card
 
 /* Sexto  miembro */
 
-let Rodrigo=new Miembros("Rodrigo Niebla Torres López","../src/images/Rodrigo.jpg","This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
-                    ,"https://github.com/iRoooooo" , "https://www.linkedin.com/in/rod-torres-730aa5221")
+let Rodrigo=new Miembros("Rodrigo Torres","../src/images/Rodrigo.jpg","Equipo Front-End. Licenciado en Urbanismo."
+                    ,"https://github.com/iRoooooo" , "https://www.linkedin.com/in/rodrigo-torres-730aa5221")
 
 Rodrigo.agregarcard()
 
@@ -109,14 +109,14 @@ card6.innerHTML = Rodrigo.card
 
 /* Septimo miembro */
 
-let Miguel=new Miembros("Miguel Angel Cerón Martínez","../src/images/Miguel.jpg","This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+let Miguel=new Miembros("Miguel Cerón","../src/images/Miguel.jpg","Equipo Front-End. Ingeniería geofísica."
                     ,"https://github.com/MikeCeron" , "https://www.linkedin.com/in/miguel-%C3%A1ngel-cer%C3%B3n-mart%C3%ADnez-926541185/")
 
 Miguel.agregarcard()
 card7.innerHTML = Miguel.card
 /* Termina Septimo miembro */
 const card8 =document.getElementById("card8");
-let Paulina=new Miembros("Paulyna Campuzano Sánchez","../src/images/Paulina.jpg","This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+let Paulina=new Miembros("Paulyna Campuzano","../src/images/Paulina.jpg","Diseño UX/UI. Diseñadora y comunicadora visual"
                         ,"https://github.com/PaulynaC","https://www.linkedin.com/in/paulyna-campuzano")
 
 Paulina.agregarcard();

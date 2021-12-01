@@ -7,9 +7,9 @@ body{
 
 
 }
-.titulo{
-    transform: translateY(30%);
-    text-align: center; 
+.titulo {
+    transform: translateY(30%) !important;
+    text-align: center !important; 
 }
 
 .separacion{

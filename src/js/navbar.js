@@ -15,23 +15,28 @@ let head = `
                     <a class="nav-link" href="../index.html">INICIO</a>
                 </li>
                 <li id="moveText2" class="nav-item">
-                    <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                    <a class="nav-link" href="../pages/productosExp.html">PRODUCTOS</a>
                 </li>
                 <li id="logoNav" class="navbar-item d-lg-block d-none" href="#">
-                    <img src="../src/images/logo.svg">
+                <a class="nav-link" href="../index.html"><img src="../src/images/logo.svg"></a>
                 </li><!--Logo navbar--> 
                 <li id="moveText3" class="nav-item">
-                    <a class="nav-link" href="./contáctanos.html">CONTÁCTANOS</a>
+                    <a class="nav-link" href="../pages/contáctanos.html">CONTÁCTANOS</a>
                 </li>
                 <li id="moveText4" class="nav-item">
-                    <a class="nav-link" href="./acerca.html">ACERCA&nbsp;DE</a>
+                    <a class="nav-link" href="../pages/acerca.html">ACERCA&nbsp;DE</a>
                 </li>
                 <li id="moveText5" class="nav-item">
-                <a class="nav-link" href="./login.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                <a class="nav-link" href="../pages/login.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                         fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
                         <path
                             d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                     </svg></a>
+                </li>
+                <li id="moveText" class="nav-item">
+                    <a class="nav-link" href="../pages/login.html" id="logout" onclick="eliminarUsuario()">
+                        
+                    </a>
                 </li>
             </ul><!--Items navbar-->
         </div>
@@ -73,79 +78,103 @@ let foot = `
 
 anclaHeader.innerHTML = head;
 anclaFooter.innerHTML = foot;
-
-
+iniciarDefault();
 if(localStorage.getItem("usuarioActivo")!=null) {//esta logeado el usuario dueño
-    let usuarioActivo=JSON.parse(localStorage.getItem("usuarioActivo"));
-    if(usuarioActivo=="admin@gmail.com"){
-        const anclaPagDesarrollador=document.getElementById("administrador");
-        let botonPagDesarrollo=`<a href="../pages/PaginaDesarrollador.html" >Agregar Productos</a>`;
-        anclaPagDesarrollador.innerHTML=botonPagDesarrollo;
-    }
+    const anclaPagDesarrollador=document.getElementById("logout");
+    let botonLogOut=`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+    <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+    </svg>`;
+    anclaPagDesarrollador.innerHTML=botonLogOut;
 }
-    
-function iniciarProductos(){
+
+function eliminarUsuario(){
+    localStorage.removeItem("usuarioActivo");
+}
+function iniciarDefault(){
     //productos por default
     if(localStorage.getItem("catalogo")==null) {//si no existe
         let totalProductos=crearProductos();
         let totalProductosJson=JSON.stringify(totalProductos);
         localStorage.setItem("catalogo", totalProductosJson);
     }
+    //usuarios por default
+    if(localStorage.getItem("usuarios")==null) {//si no existe
+        let totalUsuarios=crearUsuarios();
+        let totalUsuariosJson=JSON.stringify(totalUsuarios);
+        localStorage.setItem("usuarios", totalUsuariosJson);
+    }
+}
+function crearUsuarios(){
+    let usuarios = {};
+    usuarios[1] = {
+        id: 1,
+        nombre: "admin",
+        password: "ketzal1",
+        correo: "admin@gmail.com",   
+    };
+    usuarios[2] = {
+        id: 2,
+        nombre: "usuario",
+        password: "usuario",
+        correo: "usuario@gmail.com",   
+    };
+    return(usuarios);
 }
 function crearProductos(){
     let totalProductos = {};
     totalProductos[1] = {
         nombre: "Café Honduras",
-        precio: 102,
+        precio: 600,
         id: 1,
         cantidad: 180,
         imagen: "../src/images/productos/cafeHonduras.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café 100% de café arábica, con una producción ecológicamente sostenible. Suelen ser dulces, achocolatados, con cuerpo redondo, acidez delicada y postgusto sostenido. Perfecto para esos días de descanso."
          
     };
     totalProductos[2] = {
         nombre: "Café Borundi",
-        precio: 150,
+        precio: 550,
         id: 2,
         cantidad: 200,
         imagen: "../src/images/productos/cafeBorundi.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café de grano cosechado a mano y secado al sol en parihuelas elevadas. Se pueden identificar notas de frutas, flores y miel, acompañadas de consistencia, equilibrio y un cuerpo completo. Perfecto para iniciar tus mañanas."
          
     };
     totalProductos[3] = {
         nombre: "Café Guatemala",
-        precio: 135,
+        precio: 876,
         id: 3,
-        cantidad: 100,
+        cantidad: 500,
         imagen: "../src/images/productos/cafeGuatemala.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Este preparado gourmet es una mezcla arábiga aromática, El grano es cosechado a la sombra. Es delicioso, con pronunciada acidez cítrica y mucho cuerpo. Perfecto para compartir con amigos."
          
     };
     totalProductos[4] = {
         nombre: "Café Indonesia",
-        precio: 163,
+        precio: 490,
         id: 4,
-        cantidad: 110,
+        cantidad: 300,
         imagen: "../src/images/productos/cafeIndonesia.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Está considerado como uno de los mejores del mundo, es un café Arábica procesado húmedo. Es bastante dulce y de baja acidez, de cuerpo medio y aroma complejo a tierra. Ideal para esos días especiales."
          
     };
     totalProductos[5] = {
         nombre: "Café Mimba",
-        precio: 216,
+        precio: 637,
         id: 5,
-        cantidad: 210,
+        cantidad: 470,
         imagen: "../src/images/productos/cafeMimba.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café liofilizado hecho con granos cosechados a mano a nivel del mar. ​​Es apreciado por su dulce fragancia, acidez cítrica, sabores dulces y un cuerpo cremoso que la hacen muy agradable. Lo mejor para los días de trabajo."
          
     };
     totalProductos[6] = {
         nombre: "Café Mujeres",
-        precio: 394,
+        precio: 494,
         id: 6,
         cantidad: 360,
         imagen: "../src/images/productos/cafeMujeres.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café en grano que se cultiva en laderas empinadas, bajo la sombra de árboles y plantas que permiten una maduración más lenta. Es de acidez media y mucho cuerpo, con notas a chocolate y avellana. El mejor para compartir con esa persona especial."
          
     };
     totalProductos[7] = {
@@ -154,25 +183,25 @@ function crearProductos(){
         id: 7,
         cantidad: 400,
         imagen: "../src/images/productos/cafePeru.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café Arábica, de las mejores cosechas debido a la privilegiada ubicación de Perú. Caracterizados por su cuerpo y notas herbáceas, pero con más dulzor. Delicioso para compartir en familia."
          
     };
     totalProductos[8] = {
         nombre: "Café Pétalo",
-        precio: 93,
+        precio: 979,
         id: 8,
-        cantidad: 87,
+        cantidad: 550,
         imagen: "../src/images/productos/cafePetalo.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café robusta, cosechado 100% por familias de las mejores regiones de Perú. Agradable sabor a cítricos, albaricoques y caramelo y acidez tartárica. Lo mejor para esos momentos difíciles."
          
     };
     totalProductos[9] = {
         nombre: "Café Tziscao",
-        precio: 135,
+        precio: 725,
         id: 9,
-        cantidad: 270,
+        cantidad: 320,
         imagen: "../src/images/productos/cafeTziscao.jpeg",
-        descripcion: "Café soluble liofilizado hecho con granos cosechados a mano para que disfrutes de una deliciosa taza de café"
+        descripcion: "Café granos 100% arábica y orgánico, el tostado del cafés está elaborado en pequeños lotes, con el mayor de los cuidados, con sabor achocolatado y tonos a almendras tostadas, con un aroma y cuerpo intenso. Tu mejor aliado para esos viajes largos."
          
     };
     return(totalProductos);
