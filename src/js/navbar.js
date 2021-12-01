@@ -102,9 +102,7 @@ function iniciarDefault(){
     if(localStorage.getItem("usuarios")==null) {//si no existe
         let totalUsuarios=crearUsuarios();
         let totalUsuariosJson=JSON.stringify(totalUsuarios);
-        //.....................................PRUEBAS 
         localStorage.setItem("usuarios", totalUsuariosJson);
-        console.log("El total de usuarios es:", Object.keys(totalUsuarios).length);
     }
 }
 function crearUsuarios(){
