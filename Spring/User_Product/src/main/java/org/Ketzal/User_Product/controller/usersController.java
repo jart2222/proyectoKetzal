@@ -17,7 +17,7 @@ public class usersController {
         this._usersService = usersService;
     }
     //todos los usuarios
-    @GetMapping
+    @GetMapping("/Login")
     public List<users> getUsers(){
         return _usersService.getAllUsers();
     }
@@ -32,7 +32,7 @@ public class usersController {
         _usersService.deleteUser(userId);
     }
     //agregar usuarios
-    @PostMapping
+    @PostMapping("/Registro")
     public void addUser(@RequestBody users user){
         _usersService.addUser(user);
     }

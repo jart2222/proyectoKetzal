@@ -26,9 +26,7 @@ public class productsController {
     public products getProduct(@PathVariable("productId") Long productId){
         return _productsService.getProduct(productId);
     }
-
     //borrar producto
-
     @DeleteMapping(path ="{productId}")
     public void deleteProduct(@PathVariable("productId") Long productId){
         _productsService.deleteProduct(productId);
