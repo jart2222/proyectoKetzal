@@ -78,7 +78,7 @@ let foot = `
 
 anclaHeader.innerHTML = head;
 anclaFooter.innerHTML = foot;
-iniciarProductos();
+iniciarDefault();
 if(localStorage.getItem("usuarioActivo")!=null) {//esta logeado el usuario dueño
     const anclaPagDesarrollador=document.getElementById("logout");
     let botonLogOut=`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
@@ -91,13 +91,35 @@ if(localStorage.getItem("usuarioActivo")!=null) {//esta logeado el usuario dueñ
 function eliminarUsuario(){
     localStorage.removeItem("usuarioActivo");
 }
-function iniciarProductos(){
+function iniciarDefault(){
     //productos por default
     if(localStorage.getItem("catalogo")==null) {//si no existe
         let totalProductos=crearProductos();
         let totalProductosJson=JSON.stringify(totalProductos);
         localStorage.setItem("catalogo", totalProductosJson);
     }
+    //usuarios por default
+    if(localStorage.getItem("usuarios")==null) {//si no existe
+        let totalUsuarios=crearUsuarios();
+        let totalUsuariosJson=JSON.stringify(totalUsuarios);
+        localStorage.setItem("usuarios", totalUsuariosJson);
+    }
+}
+function crearUsuarios(){
+    let usuarios = {};
+    usuarios[1] = {
+        id: 1,
+        nombre: "admin",
+        password: "ketzal1",
+        correo: "admin@gmail.com",   
+    };
+    usuarios[2] = {
+        id: 2,
+        nombre: "usuario",
+        password: "usuario",
+        correo: "usuario@gmail.com",   
+    };
+    return(usuarios);
 }
 function crearProductos(){
     let totalProductos = {};
