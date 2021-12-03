@@ -41,8 +41,6 @@ CREATE TABLE IF NOT EXISTS `Ketzal`.`Contacto` (
   `nombre` VARCHAR(100) NOT NULL,
   `correo` VARCHAR(150) NOT NULL,
   `telefono` VARCHAR(10) NOT NULL,
-  `asunto` VARCHAR(50) NOT NULL,
-  `mensaje` VARCHAR(400) NOT NULL,
   PRIMARY KEY (`idContacto`),
   UNIQUE INDEX `idContacto_UNIQUE` (`idContacto` ASC) VISIBLE)
 ENGINE = InnoDB;
@@ -58,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `Ketzal`.`Clientes` (
   `nombre` VARCHAR(100) NOT NULL,
   `correo` VARCHAR(150) NOT NULL,
   `telefono` VARCHAR(10) NOT NULL,
-  `contraseña` VARCHAR(20) NOT NULL,
+  `password` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`idContacto`),
   UNIQUE INDEX `idContacto_UNIQUE` (`idContacto` ASC) VISIBLE)
 ENGINE = InnoDB;
@@ -72,7 +70,7 @@ DROP TABLE IF EXISTS `Ketzal`.`Administrador` ;
 CREATE TABLE IF NOT EXISTS `Ketzal`.`Administrador` (
   `idAdministrador` INT NOT NULL,
   `correo` VARCHAR(150) NULL,
-  `contraseña` VARCHAR(20) NULL,
+  `password` VARCHAR(20) NULL,
   PRIMARY KEY (`idAdministrador`))
 ENGINE = InnoDB;
 
