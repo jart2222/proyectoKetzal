@@ -11,7 +11,7 @@
       <title>Administrador</title>
   </head>
   <header id="menu" ></header>
-  <body>
+  <body onload="traer_id()" >
       <section id="form_1" class="container-fluid">
         <div class="row justify-content-center">
           <div class="imagen">
@@ -28,7 +28,7 @@
               </div>
               <div class="col-md-6">
                 <label for="idProducto" class="form-label">ID DEL PRODUCTO *</label>
-                <input type="number" step="1" min="1" class="form-control" id="idProducto">
+                <input type="number" step="1" min="1" class="form-control" id="idProducto" value="" disabled >
               </div>
               <div class="col-md-6">
                 <label for="precio" class="form-label">PRECIO *</label>
@@ -40,15 +40,18 @@
               </div>    
               <div class="mb-3">
                 <label for="Imagen" class="form-label">NOMBRE DE LA IMAGEN *</label>
-                <input type="text" minlength="1" maxlength="15" class="form-control" id="imagen">
+                <input type="text" minlength="1" maxlength="100" class="form-control" id="imagen">
               </div>
               <div class="mb-3">
                 <label for="Descripción" class="form-label">DESCRIPCIÓN DEL PRODUCTO *</label>
-                <textarea class="form-control" minlength="1" maxlength="60" id="descripcion" type="text" rows="3"></textarea>
+                <textarea class="form-control" minlength="1" maxlength="100" id="descripcion" type="text" rows="3"></textarea>
               </div>
               <div class="botones col-12">
-                <button type="submit" class="btn  justify-content-center">AGREGAR</button>
+                <button type="submit" class="btn justify-content-center">AGREGAR</button>
               </div><!--div boton-->
+              <div class="botones col-12">
+                <a class="justify-content-center-btn btn-outline-success" href="adminiEditarActuales.html" role="button"> Editar productos actuales</a>
+              </div>
             </form>
           </div><!--div form -->
         </div><!--div row-->

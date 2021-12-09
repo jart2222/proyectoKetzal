@@ -138,7 +138,33 @@ function existeUsuario(input_correo){
 }
 
 function Datos_exitoso(input_correo,input_contrasena,input_nombreusuario){
-    let usuarios = JSON.parse(localStorage.getItem("usuarios")); 
+    let newUser= {
+        "nombre": input_nombreusuario,
+        "correo": input_correo ,
+        "telefono" : "5517247754" ,
+        "contrasena": input_contrasena
+    }
+    let url="http://127.0.0.1:8080/api/clientes";
+    fetch(url,{
+
+        method: 'POST', // *GET, POST, PUT, DELETE, etc.
+        headers: {
+        'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: JSON.stringify(newUser),
+  });
+    then(function(response){
+        if(response.status==200){
+            let color="success"
+            let mensajealert="Datos registrados exitosamente, ¡MUCHAS GRACIAS!";
+            alertUser(mensajealert,color);
+            location.href ="../pages/productosExp.html"
+
+        }
+    } )
+
+    /* let usuarios = JSON.parse(localStorage.getItem("usuarios")); 
     let totalUsuarios = Object.keys(usuarios).length
     usuarios[totalUsuarios+1] = {
         id: totalUsuarios+1,
@@ -153,13 +179,9 @@ function Datos_exitoso(input_correo,input_contrasena,input_nombreusuario){
     //log in del usuario registrado automático
     let usuarioAceptado=JSON.stringify(input_correo);
     localStorage.removeItem("usuarioActivo");
-    localStorage.setItem("usuarioActivo",usuarioAceptado);
+    localStorage.setItem("usuarioActivo",usuarioAceptado); */
     //mensaje usuario registrado
-    let color="success"
-    let mensajealert="Datos registrados exitosamente, ¡MUCHAS GRACIAS!";
-    alertUser(mensajealert,color);
-    //ir a productos para comprar
-    location.href ="../pages/productosExp.html"
+    
 
 }
 

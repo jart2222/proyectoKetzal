@@ -5,7 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f3e31cf-e4d5-44ed-bc7e-075957bc32e1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ketzal/ketzal/controller/ClientesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ketzal/ketzal/controller/ClientesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/ketzal/ketzal/controller/ProductosController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/ketzal/ketzal/controller/ProductosController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ketzal/ketzal/controller/ClientesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ketzal/ketzal/controller/ClientesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ketzal/ketzal/controller/ProductosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ketzal/ketzal/controller/ProductosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/7.3.1/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/7.3.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/7.3.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/7.3.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/7.3.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/7.3.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/7.3.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/7.3.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/7.3.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/7.3.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/build/classes/java/main/com/ketzal/ketzal/ClientesRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/build/classes/java/main/com/ketzal/ketzal/ClientesService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/build/classes/java/main/com/ketzal/ketzal/KetzalApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/build/classes/java/main/com/ketzal/ketzal/ProductosRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/build/classes/java/main/com/ketzal/ketzal/ProductosService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/build/classes/java/main/com/ketzal/ketzal/controller/ClientesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/build/classes/java/main/com/ketzal/ketzal/controller/ProductosController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/build/classes/java/main/com/ketzal/ketzal/model/clientes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/build/classes/java/main/com/ketzal/ketzal/model/productos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/build/resources/main/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SrpingProductos/ketzal/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pages/administrador.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../pages/administrador.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/js/administrador.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/js/administrador.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/js/registroJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/js/registroJS.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
