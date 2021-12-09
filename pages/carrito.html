@@ -13,7 +13,10 @@
     </head>
     <header id="menu"></header>
     <body>
-        <div class="carousel slide" data-bs-ride="carousel">
+      
+
+     <Section class="container-fluid ">
+        <div class="container-fluid carousel slide row justify-content-center" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="../src/images/FondoProductos1.jpg" class="d-block w-100">
@@ -33,23 +36,28 @@
                 </div>
             </div>
         </div>
-        <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-            <Section class="container-fluid">
+        <div class="carrito col-12 col-lg-6 col-xl-12 row justify-content-center">
+          
                 <table id="cart">
                     <thead>
-                        <tr>
+                        <tr >
                             <th>Producto</th>
+                          
                             <th>Precio unitario</th>
                             <th>Cantidad</th>
                             <th>Sub-total</th>
                             <th>Acción</th>
                         </tr>
+                        
                     </thead>
-                    <tbody id="productos">
+                    <tbody  id="productos">
                     </tbody> 
                 </table>  
-            </Section>
+            
         </div>
+        
+    </Section>   
+
         <footer id="footer" class="container-fluid"></footer>
         <!-- Bootstrap 5.1 -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -61,5 +69,6 @@
         <!-- Bootstrap 5.1 -->
         <script src="../src/js/navbar.js"></script>
         <script src="../src/js/carrito.js"></script>
+    
     </body>
 </html>

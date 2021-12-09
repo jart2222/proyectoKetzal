@@ -12,34 +12,49 @@ function pintarCarrito(){
             let subtotal=carrito[idProducto].precio*carrito[idProducto].cantidad;
             total=total+subtotal;
             let card=`
-                <tr class="Producto">                                  
-                    <td class="name">
+          <div  style="padding: 1%;">
+                <tr class="  Producto">      
+                                            
+                    <td class="  name">
+                    
                         <span>${carrito[idProducto].nombre}</span>
+                    
                     </td>
-                    <td class="pu">
+                    <td class=" pu">
+                   
                         $<span>${carrito[idProducto].precio}</span>MXN
+                     
                     </td>
-                    <td class="qty">
+                    <td class="  qty">
+                  
                         <span>${carrito[idProducto].cantidad}</span>
-                    </td>
+                       
+                        </td>
+                   
                     <td class="subtot">
+                   
                         $<span>${subtotal}</span>
-                    </td>
-                    <td class="rm">
-                        <button id=${idProducto} onclick="addCarrito(this)" class="btn btn-info btn-sm">+</button>
-                        <button id=${idProducto} onclick="removeCarrito(this)" class="btn btn-danger btn-sm">-</button>
-                    </td>
-                </tr> <!--product --> 
+                    
+                        </td>
+                    
+                        <td class="rm">     
+                      
+                            <div class=" btn-group" role="group" aria-label="Basic example" >
+                              <button id=${idProducto}  onclick="removeCarrito(this)"  type="button" class="btn btn-success-sm">-</button>
+                              <button id=${idProducto} onclick="addCarrito(this)" type="button" class="btn btn-success-sm">+</button>
+                            </div>                   
+                     </tr> <!--product --> 
+               </div>
             `;
             plantillaFinal = plantillaFinal + card;
         }
         let final=`
-            <div class="botones col-12">
-                <p class="cta">
-                    <button  onclick="vaciarCarrito()" class="btn btn-success ">Vaciar Carrito</button>
-                </p>
-            </div>
-            <h2 >Total: $<span>${total}</span></h2>
+        
+        <div  style="column justify-content-center padding: 5%;"> 
+        
+            <h4>Total: $<span>${total}</span></h4>
+            <button  onclick="vaciarCarrito()" class="btn btn-outline-success">Vaciar Carrito</button>
+        </div>    
         `;
         plantillaFinal = plantillaFinal + final;
         ancla.innerHTML = plantillaFinal;
