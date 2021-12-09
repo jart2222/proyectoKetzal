@@ -26,6 +26,7 @@ function validar1(){
         return true;
     }
 
+    return false;
 }
 
 function validar2(){
@@ -46,6 +47,8 @@ function validar2(){
         alertUser(mensajealert,color);
         return true;
     }
+
+    return false;
 }
 
 function validar4(){
@@ -65,6 +68,8 @@ function validar4(){
         alertUser(mensajealert,color);
         return true;
     }  
+
+    return false;
 }
 
 
@@ -85,9 +90,10 @@ function validar5(){
         alertUser(mensajealert,color);
         return true;
     }
+    return false;
 }
 
-function Datos_exitoso(input_correo,input_contrasena,input_nombreusuario) {
+function datosExitosos(input_correo,input_contrasena,input_nombreusuario) {
 
     let data = {};
     data.nombre = input_nombreusuario;
@@ -103,41 +109,56 @@ function Datos_exitoso(input_correo,input_contrasena,input_nombreusuario) {
         body: JSON.stringify(data)
     })
     .then(response => {
-        if (response.status = 200) {
+        if (response.status == 200) {
             let color="success"
             let mensajealert="Datos registrados exitosamente, ¡MUCHAS GRACIAS!";
             alertUser(mensajealert,color);
+            location.href ="../pages/productosExp.html"
         }
-    });
-}
-
-function existeCliente(input_correo) {
-    let verificacion;
-    let url = "http://127.0.0.1:8080/api/clientes";
-
-    fetch(url, {
-        method: "GET",
-        headers: { 'Content-Type': 'application/json'}
+        if (response.status == 500) {
+            console.log(response);
+            let color="warning"
+            let mensajealert="Usuario ya registrado";
+            alertUser(mensajealert,color);
+        }
     })
-    .then(data => data.json())
-    .then(clientes => {
-        console.log(input_correo);
-        Array.from(clientes).forEach(cliente => {
-            console.log(cliente.correo);
-
-            if (input_correo == cliente.correo) { 
-                console.log(input_correo + " es igual a " + cliente.correo);
-                verificacion = true;       
-                console.log("Contraseña ya existente");
-            } else {
-                verificacion = false;
-            }
-        
-        });
+    .catch(error => {
+        console.log(error.response.data);
     });
-    console.log(verificacion);
-    return verificacion;
 }
+
+// function existeCliente(input_correo) {
+//     let verificacion;
+//     let url = "http://127.0.0.1:8080/api/clientes";
+
+//     fetch(url, {
+//         method: "GET",
+//         headers: { 'Content-Type': 'application/json'}
+//     })
+//     .then(data => data.json())
+//     .then(function(clientes) {
+//         console.log(input_correo);
+//         Array.from(clientes).forEach(cliente => {
+//             console.log(cliente.correo);
+
+//             if (input_correo == cliente.correo) { 
+//                 console.log(input_correo + " es igual a " + cliente.correo);
+//                 verificacion = true;       
+//                 console.log("Contraseña ya existente");
+//             } else {
+//                 verificacion = false;
+//             }
+        
+//         });
+//     })
+//     .catch(error => {
+//         console.log(error);
+//     });
+
+    
+//     console.log(verificacion);
+//     return verificacion;
+// }
 
 function crearjson(){
     document.getElementById("alertanombre").innerHTML=""; /* reinicia el div del mensaje*/
@@ -165,22 +186,29 @@ function crearjson(){
         validar++;  
     }
 
-    if(validar==0) {
-        //info formulario
+    if (validar == 0){
         let input_correo = document.getElementById("mail").value;
-
-        if(existeCliente(input_correo) == true){
-            mensajealert = "Ya existe este usuario";
-            alertUser(mensajealert,color);
-            console.log("Si entro al if");
-        } else{
-            console.log("Si entro a datos exitosos");
-            let input_contrasena= document.getElementById("contraseñas").value;
-            let input_nombreusuario=document.getElementById("nombreusuario1").value;
-            Datos_exitoso(input_correo,input_contrasena,input_nombreusuario);
-        }   
-    } 
+        let input_contrasena= document.getElementById("contraseñas").value;
+        let input_nombreusuario=document.getElementById("nombreusuario1").value;
+        datosExitosos(input_correo, input_contrasena, input_nombreusuario);
+    }
 }
+
+    // if(validar==0) {
+    //     //info formulario
+    //     let input_correo = document.getElementById("mail").value;
+
+    //     if(existeCliente(input_correo) == true){
+    //         mensajealert = "Ya existe este usuario";
+    //         alertUser(mensajealert,color);
+    //         console.log("Si entro al if");
+    //     } else{
+    //         console.log("Si entro a datos exitosos");
+    //         let input_contrasena= document.getElementById("contraseñas").value;
+    //         let input_nombreusuario=document.getElementById("nombreusuario1").value;
+    //         Datos_exitoso(input_correo,input_contrasena,input_nombreusuario);
+    //     }   
+    // } 
 
 // function existeUsuario(input_correo){
 //     //usuarios localstorage
