@@ -128,7 +128,7 @@ function traer_id(){
 function crear(input_nombre,input_imagen,input_descripcion,input_precio,input_cantidad){
     let url ="http://127.0.0.1:8080/api/productos";
     let data = {nombre:`${input_nombre}`,
-                imagen: `../src/images/productos/${input_imagen}`,
+                imagen: `${input_imagen}.jpeg`,
                 descripcion:`${input_descripcion}`,
                 precio: input_precio,
                 gramaje: input_cantidad} ;
