@@ -1,4 +1,4 @@
-const cards = document.getElementById('tarjetas')
+const cards = document.getElementById("tarjetas");
 document.addEventListener('DOMContentLoaded', e => { 
         //cargar productos por default
         let totalProductos=JSON.parse(localStorage.getItem("catalogo"));
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', e => {
                         </div>
                         <div class="card-flap flap2">
                             <div class="card-actions">
-                                <button type="submit" class="btn btn-success">Agregar al carrito</button>
+                                <button type="submit" id=${idProducto} onclick="addCarrito(this)" class="btn btn-success">Agregar al carrito</button>
                             </div>
                         </div>
                     </div>
@@ -36,4 +36,27 @@ document.addEventListener('DOMContentLoaded', e => {
             plantillaFinal = plantillaFinal + card;
         }
         ancla.innerHTML = plantillaFinal;
- });//cuando cargue todo el html
+});//cuando cargue todo el html
+// Agregar al carrito
+function addCarrito (producto){
+    let id = producto.id;
+    let carrito = {}
+    let totalProductos=JSON.parse(localStorage.getItem("catalogo"));
+    if(localStorage.getItem("carrito")!=null) {//si existe
+        carrito=JSON.parse(localStorage.getItem("carrito"));
+    }
+    if (carrito.hasOwnProperty(id)) {
+        carrito[id].cantidad = carrito[id].cantidad + 1
+    }
+    else{
+        carrito[id] = {
+            nombre: totalProductos[id].nombre,
+            precio: totalProductos[id].precio,
+            id: id,
+            cantidad: 1
+        }
+    }               
+    let carritoJson=JSON.stringify(carrito);
+    localStorage.removeItem("carrito");
+    localStorage.setItem("carrito", carritoJson);            
+}
