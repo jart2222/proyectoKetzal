@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', e => {
         //importar entradas
         let input_nombre = document.getElementById("nombre").value;
         let input_precio = document.getElementById("precio").value;
-        let input_idProducto = document.getElementById("idProducto").value;
         let input_cantidad = document.getElementById("cantidad").value;
         let input_imagen = document.getElementById("imagen").value;
         let input_descripcion = document.getElementById("descripcion").value;
@@ -55,19 +54,6 @@ document.addEventListener('DOMContentLoaded', e => {
         }
         if(!input_precio.match(posibleNumero)){
             mensajealert="El precio no tiene el formato esperado";
-            validar+=1;
-            color="warning"
-            alertUser(mensajealert,color);
-        }
-        //validacion id 
-        if(!input_idProducto.match(posibleID)){
-            mensajealert="El ID no tiene el formato esperado";
-            validar+=1;
-            color="warning"
-            alertUser(mensajealert,color);
-        }
-        if(totalProductos.hasOwnProperty(input_idProducto)) {
-            mensajealert="ya existe el ID";
             validar+=1;
             color="warning"
             alertUser(mensajealert,color);
@@ -106,20 +92,54 @@ document.addEventListener('DOMContentLoaded', e => {
             alertUser(mensajealert,color);
         }
         if (validar==0){
-            totalProductos[input_idProducto] = {
-                nombre: input_nombre,
-                precio: input_precio,
-                id: input_idProducto,
-                cantidad: input_cantidad,
-                imagen: "../src/images/productos/"+input_imagen+".jpeg",
-                descripcion: input_descripcion
-            };
+            crear(input_nombre,input_imagen,input_descripcion,input_precio,input_cantidad)
             let totalProductosJson=JSON.stringify(totalProductos);
             localStorage.removeItem("catalogo");
             localStorage.setItem("catalogo", totalProductosJson);
         }
         else{
-            validar=0;
-        } 
+           validar=0;
+        }
     });
 });
+
+function traer_id(){
+    let url ="http://127.0.0.1:8080/api/productos";
+    let promise=fetch(url,{ 
+                            method: 'GET',
+                            headers: { 'Content-Type': 'application/json'}
+                        })
+    promise
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(data){
+        let contadorid =0;
+        for (const k in data) {
+            contadorid=contadorid+1 // obtenmos longitud del arreglo
+        }
+        console.log(contadorid);
+        document.getElementById("idProducto").value= data[contadorid-1].idProductos+1 // cambiamos el value por el id que poseera el nuevo producto
+
+        
+    } );
+}
+
+function crear(input_nombre,input_imagen,input_descripcion,input_precio,input_cantidad){
+    let url ="http://127.0.0.1:8080/api/productos";
+    let data = {nombre:`${input_nombre}`,
+                imagen: `${input_imagen}.jpeg`,
+                descripcion:`${input_descripcion}`,
+                precio: input_precio,
+                gramaje: input_cantidad} ;
+
+    let promise=fetch(url,{ method: 'POST',headers: { 'Content-Type': 'application/json'}, body: JSON.stringify(data)})
+       promise
+       .then(response =>{ 
+           if (response.status=200){
+            mensajealert="Articulo Agregado";
+            color="success"
+            alertUser(mensajealert,color);
+           }
+       })
+}

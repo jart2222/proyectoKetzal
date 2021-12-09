@@ -1,4 +1,4 @@
-$(document).ready(function(){
+function ToggleCards(){
     var zindex = 10;
     
     $("div.card").click(function(e){
@@ -41,4 +41,4 @@ $(document).ready(function(){
       }
       
     });
-  });
+  }

@@ -20,18 +20,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: relative;
-    text-align: center;
-    font-family: Noto Sans;
-    font-size: 36px;
-    letter-spacing: 3px;
-    height: 250px ;
-    color: #623307;
 }
 
 .txtNuestrosProductos{
     padding: 2% ;
     margin-top: 5% ;
-    
     background-color: rgba(126, 165, 103, 1);
     Font-family: Noto Sans;
     Font-size: 36px;
@@ -41,9 +34,9 @@
     
 }
 /*Efectos de imagenes de pagina principal*/
-.prueba{
+.Contenedor_img{
     width: 100%;
-    height: 100vh;
+   
     background-color: ffffff;
     display: flex;
     justify-content: center;
@@ -52,7 +45,7 @@
 
 .box{
     width: 100%;
-    height: 80vh;/*tamaño de imagenes */
+   
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -62,14 +55,14 @@
 .box img{
     
     width: 100%;
-    height: 100%;
+    height:10vh;
     object-fit: cover;
 }
 .box .hover{
     /* padding-top: 50%; */
     
     width:0%;
-    height: 80vh; /*tamaño de efectos de imagenes */
+    height: auto; /*tamaño de efectos de imagenes */
     background-color: rgb(56, 53, 53,0.568);/*color de efecto de imagenes*/
     position: absolute;
     top: 0;
@@ -78,16 +71,11 @@
     align-items: center;
     overflow: hidden;
     transition:0.9s all;
-    padding-top: 5%;
-   
-   
 }
 .hover btn{
-    
-    
+
     color:#FAFAFA;
-    /* text-shadow: 1px,1px,1px black; */
-    font-size: 2.5em;
+    
     
 }
 .box:hover .hover{
@@ -97,10 +85,26 @@
 }
 
 .btn{
-    background-color: rgba(126, 165, 103, 1);;
+    background-color: rgba(126, 165, 103, 1);
     color: #FAFAFA;
-    margin-top: 5%;
+  
 }
+.parrafo{
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: calc(36px);
+    letter-spacing: 3px;
+    color: #623307;
+}
+@media screen and (max-width: 767px) {
+    .btn{
+        width: 5rem;
+        height: 1.5rem;
+        font-size: 50%;
+    }
+}
+
+
 
 
 
