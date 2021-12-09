@@ -99,8 +99,8 @@ function datosExitosos(input_correo,input_contrasena,input_nombreusuario) {
     data.nombre = input_nombreusuario;
     data.correo = input_correo;
     data.contrasena = input_contrasena;
+    data.telefono="0123456789"
     //guardar lista usuarios registrados
-    console.log(data);
 
     let url = "http://127.0.0.1:8080/api/clientes";
     fetch(url, {
@@ -113,6 +113,9 @@ function datosExitosos(input_correo,input_contrasena,input_nombreusuario) {
             let color="success"
             let mensajealert="Datos registrados exitosamente, ¡MUCHAS GRACIAS!";
             alertUser(mensajealert,color);
+            let usuarioAceptado=JSON.stringify(data.correo);
+            localStorage.removeItem("usuarioActivo");
+            localStorage.setItem("usuarioActivo",usuarioAceptado);
             location.href ="../pages/productosExp.html"
         }
         if (response.status == 500) {

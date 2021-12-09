@@ -59,8 +59,6 @@ function getClientes() {
                 let color = "warning"
                 alertnoregistrado(mensajealert, color);
             }
-
-            console.log(cliente.idcontacto + " " + cliente.nombre + " " + cliente.correo + " " + cliente.telefono + " " + cliente.contrasena);
         })
     });
 }
