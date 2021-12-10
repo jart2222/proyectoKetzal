@@ -18,6 +18,9 @@ body{
    
 }
 
+input {
+    background-color:#623307;
+}
 
 .formulario2{
     font-weight: bold;

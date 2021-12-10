@@ -28,13 +28,13 @@ function desplejar_get(data){
 function crear_lista(idP,nombreP,imagenP,productoP,precioP,gramajeP){
     let tarjetas=document.getElementById("tarjetas")
     tarjetas.innerHTML+=
-    `                   <div class=" col-sm-12 col-md-12 col-lg-6">
+    `                   <div class=" col-sm-12 col-md-12 col-lg-6" style="padding: 3%; border: solid 20px rgba(126, 165, 103, 0.425);">
                             <ul class="list-group">
                                 <li class="list-group-item list-group-item-success" aria-disabled="true">Producto num. ${idP}</li>
                                 <li class="list-group-item list-group-item-danger">Nombre del producto: ${nombreP}</li>
                                 <li class="list-group-item list-group-item-danger">Direccion de la imagen: ${imagenP}</li>
-                                <li class="list-group-item list-group-item-danger">Descripcion: ${productoP}</li>
-                                <li class="list-group-item list-group-item-danger">Precio: ${precioP} pesos.</li>
+                                <li class="list-group-item list-group-item-danger" style="text-align: justify;>Descripcion: ${productoP}</li>
+                                <li class="list-group-item list-group-item-danger">Precio: ${precioP} MXN.</li>
                                 <li class="list-group-item list-group-item-danger">Peso: ${gramajeP} gr</li>
                                 <li class="list-group-item list-group-item-danger"><button type="button" class="btn btn-success" onclick="borrarProducto(${idP})" >Eliminar</button></li>
                                 <li class="list-group-item list-group-item-danger">
