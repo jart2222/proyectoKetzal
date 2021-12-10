@@ -20,7 +20,7 @@ public class ProductosService {
     }
 
     public productos getProductos(Long id){
-        return productosRepository.findById(id).orElseThrow(()-> new IllegalStateException("El producto con el id" +id+" no existe"));
+        return productosRepository.findById(id).orElseThrow(()-> new IllegalStateException("El producto con el id" + id +" no existe"));
     }
     public void deleteProductos(Long id){
         if (productosRepository.existsById(id)){
@@ -29,8 +29,8 @@ public class ProductosService {
             throw new IllegalStateException("El producto con el id"+id+
                     "no existe");
         }
-
     }
+
     public void addProductos(productos producto){
         Optional<productos> prodByName=
                 productosRepository.findByName(producto.getNombre());

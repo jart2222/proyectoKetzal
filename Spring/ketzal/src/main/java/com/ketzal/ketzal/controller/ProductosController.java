@@ -38,8 +38,8 @@ public class ProductosController {
                                @RequestParam(required = false) String nombre,
                                @RequestParam(required = false) String imagen,
                                @RequestParam(required = false) String descripcion,
-                               @RequestParam(required = false) double precio,
-                               @RequestParam(required = false) double gramaje
+                               @RequestParam(required = false) Double precio,
+                               @RequestParam(required = false) Double gramaje
                                ){
         productosService.updateProductos(id,nombre,imagen,descripcion,precio,gramaje);
     }

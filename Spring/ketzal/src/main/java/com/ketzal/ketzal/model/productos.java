@@ -12,10 +12,10 @@ public class productos {
     private String nombre;
     private String imagen;
     private String descripcion;
-    private double precio;
-    private double gramaje;
+    private Double precio;
+    private Double gramaje;
 
-    public productos(Long idProductos, String nombre, String imagen, String descripcion, double precio, double gramaje) {
+    public productos(Long idProductos, String nombre, String imagen, String descripcion, Double precio, Double gramaje) {
         this.idProductos = idProductos;
         this.nombre = nombre;
         this.imagen = imagen;
