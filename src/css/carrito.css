@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body{
+    color: #623307; 
+    font-family: 'Noto Sans', sans-serif;
+    text-align: justify; 
+    justify-content: center;
+    font-size: 115%;
+
+}
+
+.titulo {
+    transform: translateY(30%) !important;
+    text-align: center !important; 
+}
+
+.separacion{
+    margin: 5%;
+}
+.botones{  
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+   
+}
+
+
+#cart thead tr{
+    color: white; 
+    background-color: rgba(126, 165, 103, 1);
+}
+.carrito{
+    padding: 5%;  
+}
+.btn{
+    background-color: #006E59; 
+   height: 2%;
+    color: white; 
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+.container{
+    color: #623307;
+    font-family: 'Noto Sans', sans-serif;
+    justify-content: center;
+}
+
+

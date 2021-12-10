@@ -72,6 +72,18 @@ nav {
         left: 90%;
         transform: translateY(-50%);
     }
+    #moveText6 {
+        position: absolute;
+        top: 50%;
+        left: 95%;
+        transform: translateY(-50%);
+    }
+    #moveText7 {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+    }
 }
 
 /*
