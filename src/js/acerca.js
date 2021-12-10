@@ -109,6 +109,7 @@ card6.innerHTML = Rodrigo.card
 
 /* Septimo miembro */
 
+
 let Miguel=new Miembros("Miguel Cerón","../src/images/Miguel.jpg","Desarrollador Java Full Stack. Ingeniero en geofísica. Me encanta la naturaleza y conocer nuevos lugares."
                     ,"https://github.com/MikeCeron" , "https://www.linkedin.com/in/miguel-%C3%A1ngel-cer%C3%B3n-mart%C3%ADnez-926541185/")
 
