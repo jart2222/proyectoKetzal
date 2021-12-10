@@ -33,7 +33,7 @@ function crear_lista(idP,nombreP,imagenP,productoP,precioP,gramajeP){
                                 <li class="list-group-item list-group-item-success" aria-disabled="true">Producto num. ${idP}</li>
                                 <li class="list-group-item list-group-item-danger">Nombre del producto: ${nombreP}</li>
                                 <li class="list-group-item list-group-item-danger">Direccion de la imagen: ${imagenP}</li>
-                                <li class="list-group-item list-group-item-danger" style="text-align: justify;>Descripcion: ${productoP}</li>
+                                <li class="list-group-item list-group-item-danger" style="text-align: justify;"> Descripcion: ${productoP}</li>
                                 <li class="list-group-item list-group-item-danger">Precio: ${precioP} MXN.</li>
                                 <li class="list-group-item list-group-item-danger">Peso: ${gramajeP} gr</li>
                                 <li class="list-group-item list-group-item-danger"><button type="button" class="btn btn-success" onclick="borrarProducto(${idP})" >Eliminar</button></li>
