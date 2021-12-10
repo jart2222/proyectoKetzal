@@ -84,7 +84,7 @@ let foot = `
 
 anclaHeader.innerHTML = head;
 anclaFooter.innerHTML = foot;
-iniciarDefault();
+// iniciarDefault();
 if(localStorage.getItem("usuarioActivo")!=null) {//esta logeado el usuario dueño
     const anclaPagDesarrollador=document.getElementById("logout");
     let botonLogOut=`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
